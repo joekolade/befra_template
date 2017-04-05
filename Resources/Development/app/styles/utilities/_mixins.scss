@@ -1,0 +1,16 @@
+
+// Mixins
+//
+
+@mixin whitish(){
+  color: $white;
+
+  a {
+    color: $white;
+
+    &:hover ,
+    &:active {
+      color: darken($white, 10%);
+    }
+  }
+}

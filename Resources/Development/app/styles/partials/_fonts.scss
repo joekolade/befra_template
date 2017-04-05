@@ -1,8 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,700';
 
-$font-family-base: 'Open Sans', sans-serif;
+body {
+  font-family: $font-family-base;
+}
 
-// Define font weight
-$headings-font-weight: 700;
-$font-weight-bold: 700;
-$font-family-base: 300;

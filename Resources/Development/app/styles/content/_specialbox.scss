@@ -1,0 +1,9 @@
+
+// Specialbox
+//
+
+.specialBox {
+  background: $black;
+
+  @include whitish;
+}
