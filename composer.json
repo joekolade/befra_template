@@ -1,0 +1,23 @@
+{
+  "name": "js/befra_template",
+  "type": "typo3-cms-extension",
+  "description": "Another Fetscher Website",
+  "version": "1.0.6",
+  "homepage": "https://github.com/joekolade/befra_template",
+  "license": ["GPL-2.0+"],
+  "authors": [
+      {
+          "name": "Joe Schäfer",
+          "email": "mail@schaefer-webentwicklung.de"
+      }
+  ],
+  "require": {
+    "typo3/cms-core": "^8.0",
+    "mask/mask": "^2.1",
+    "in2code/powermail": "^3.8",
+    "dmitryd/typo3-realurl": "^2.1"
+  },
+  "autoload": {
+    "psr-4": { "JS\\BefraTemplate\\": "Classes/"}
+  }
+}

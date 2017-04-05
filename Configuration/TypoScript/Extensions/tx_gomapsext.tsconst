@@ -1,0 +1,1 @@
+plugin.tx_gomapsext.settings.apiKey = AIzaSyCmmP9FQ_jShzJxBm8Ad6C8UiVe56ePheA

@@ -1,0 +1,12 @@
+<div class="logoWrap">
+  <div class="logo">
+    <f:link.page pageUid="{pageIds_root}">
+      {logoFile -> f:format.raw()}
+    </f:link.page>
+  </div>
+  <f:if condition="{claim}">
+    <div class="claim">
+      {claim -> f:format.raw()}
+    </div>
+  </f:if>
+</div>

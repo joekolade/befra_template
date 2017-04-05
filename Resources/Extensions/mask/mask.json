@@ -1,0 +1,398 @@
+{
+    "tt_content": {
+        "elements": {
+            "spacer": {
+                "label": "Spacer",
+                "key": "spacer",
+                "shortLabel": "",
+                "description": "F\u00fcgt einen konfigurierbaren Abstand ein",
+                "icon": "fa-arrows-v",
+                "color": "#3d5d57",
+                "columns": [
+                    "tx_mask_spacer_height_xs",
+                    "tx_mask_spacer_height_sm",
+                    "tx_mask_spacer_height_md",
+                    "tx_mask_spacer_height_lg"
+                ],
+                "labels": [
+                    "Abstand XS (< 768px)",
+                    "Abstand SM (>= 768px)",
+                    "Abstand MD (>= 992px)",
+                    "ABstand LG (> 1200px)"
+                ]
+            },
+            "stageimage": {
+                "label": "Stage Bild",
+                "key": "stageimage",
+                "shortLabel": "",
+                "description": "",
+                "icon": "fa-photo",
+                "color": "#ff7d00",
+                "columns": [
+                    "image"
+                ],
+                "labels": [
+                    ""
+                ]
+            }
+        },
+        "sql": {
+            "tx_mask_spacer_height_xs": {
+                "tt_content": {
+                    "tx_mask_spacer_height_xs": "tinytext"
+                }
+            },
+            "tx_mask_spacer_height_sm": {
+                "tt_content": {
+                    "tx_mask_spacer_height_sm": "tinytext"
+                }
+            },
+            "tx_mask_spacer_height_md": {
+                "tt_content": {
+                    "tx_mask_spacer_height_md": "tinytext"
+                }
+            },
+            "tx_mask_spacer_height_lg": {
+                "tt_content": {
+                    "tx_mask_spacer_height_lg": "tinytext"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_spacer_height_xs": {
+                "config": {
+                    "type": "select",
+                    "renderType": "selectSingle",
+                    "size": "",
+                    "items": [
+                        [
+                            "keiner",
+                            "0"
+                        ],
+                        [
+                            "10",
+                            "10"
+                        ],
+                        [
+                            "20",
+                            "20"
+                        ],
+                        [
+                            "40",
+                            "40"
+                        ],
+                        [
+                            "60",
+                            "60"
+                        ],
+                        [
+                            "80",
+                            "80"
+                        ]
+                    ],
+                    "foreign_table": "",
+                    "foreign_table_where": "",
+                    "fileFolder": "",
+                    "fileFolder_extList": "",
+                    "fileFolder_recursions": "",
+                    "maxitems": "",
+                    "autoSizeMax": ""
+                },
+                "exclude": "1",
+                "key": "spacer_height_xs"
+            },
+            "tx_mask_spacer_height_sm": {
+                "config": {
+                    "type": "select",
+                    "renderType": "selectSingle",
+                    "size": "",
+                    "items": [
+                        [
+                            "keiner",
+                            "0"
+                        ],
+                        [
+                            "10",
+                            "10"
+                        ],
+                        [
+                            "20",
+                            "20"
+                        ],
+                        [
+                            "40",
+                            "40"
+                        ],
+                        [
+                            "60",
+                            "60"
+                        ],
+                        [
+                            "80",
+                            "80"
+                        ]
+                    ],
+                    "foreign_table": "",
+                    "foreign_table_where": "",
+                    "fileFolder": "",
+                    "fileFolder_extList": "",
+                    "fileFolder_recursions": "",
+                    "maxitems": "",
+                    "autoSizeMax": ""
+                },
+                "exclude": "1",
+                "key": "spacer_height_sm"
+            },
+            "tx_mask_spacer_height_md": {
+                "config": {
+                    "type": "select",
+                    "renderType": "selectSingle",
+                    "size": "",
+                    "items": [
+                        [
+                            "keiner",
+                            "0"
+                        ],
+                        [
+                            "10",
+                            "10"
+                        ],
+                        [
+                            "20",
+                            "20"
+                        ],
+                        [
+                            "40",
+                            "40"
+                        ],
+                        [
+                            "60",
+                            "60"
+                        ],
+                        [
+                            "80",
+                            "80"
+                        ]
+                    ],
+                    "foreign_table": "",
+                    "foreign_table_where": "",
+                    "fileFolder": "",
+                    "fileFolder_extList": "",
+                    "fileFolder_recursions": "",
+                    "maxitems": "",
+                    "autoSizeMax": ""
+                },
+                "exclude": "1",
+                "key": "spacer_height_md"
+            },
+            "tx_mask_spacer_height_lg": {
+                "config": {
+                    "type": "select",
+                    "renderType": "selectSingle",
+                    "size": "",
+                    "items": [
+                        [
+                            "keiner",
+                            "0"
+                        ],
+                        [
+                            "10",
+                            "10"
+                        ],
+                        [
+                            "20",
+                            "20"
+                        ],
+                        [
+                            "40",
+                            "40"
+                        ],
+                        [
+                            "60",
+                            "60"
+                        ],
+                        [
+                            "80",
+                            "80"
+                        ]
+                    ],
+                    "foreign_table": "",
+                    "foreign_table_where": "",
+                    "fileFolder": "",
+                    "fileFolder_extList": "",
+                    "fileFolder_recursions": "",
+                    "maxitems": "",
+                    "autoSizeMax": ""
+                },
+                "exclude": "1",
+                "key": "spacer_height_lg"
+            }
+        }
+    },
+    "pages": {
+        "elements": {
+            "2": {
+                "label": "Start-Seite",
+                "key": "2",
+                "shortLabel": "dummy shortitle",
+                "description": "dummy description",
+                "columns": [
+                    "tx_mask_agencyname",
+                    "tx_mask_agencyhomepage",
+                    "tx_mask_agencylogo",
+                    "tx_mask_agencyfootertext"
+                ],
+                "labels": [
+                    "Agentur Name",
+                    "Agentur Homepage",
+                    "Agentur-Logo",
+                    "Agentur-Text im Footer"
+                ],
+                "options": {
+                    "3": "rte"
+                }
+            },
+            "1": {
+                "label": "Standard-Seite",
+                "key": "1",
+                "shortLabel": "dummy shortitle",
+                "description": "dummy description",
+                "labels": [
+                    "Schnellanfrage"
+                ],
+                "columns": [
+                    "tx_mask_quickform_show"
+                ]
+            }
+        },
+        "sql": {
+            "tx_mask_agencyname": {
+                "pages": {
+                    "tx_mask_agencyname": "tinytext"
+                }
+            },
+            "tx_mask_agencyhomepage": {
+                "pages": {
+                    "tx_mask_agencyhomepage": "tinytext"
+                }
+            },
+            "tx_mask_agencylogo": {
+                "pages": {
+                    "tx_mask_agencylogo": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_agencyfootertext": {
+                "pages": {
+                    "tx_mask_agencyfootertext": "text"
+                }
+            },
+            "tx_mask_quickform_show": {
+                "pages": {
+                    "tx_mask_quickform_show": "int(11) DEFAULT '0' NOT NULL"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_agencyname": {
+                "config": {
+                    "type": "input",
+                    "eval": "required",
+                    "default": "Werbeagentur Fetscher",
+                    "placeholder": "",
+                    "size": "",
+                    "max": "",
+                    "is_in": ""
+                },
+                "exclude": "1",
+                "key": "agencyname"
+            },
+            "tx_mask_agencyhomepage": {
+                "config": {
+                    "type": "input",
+                    "wizards": {
+                        "_PADDING": "2",
+                        "link": {
+                            "type": "popup",
+                            "title": "Link",
+                            "icon": "EXT:backend\/Resources\/Public\/Images\/FormFieldWizard\/wizard_link.gif",
+                            "module": {
+                                "name": "wizard_link",
+                                "urlParameters": {
+                                    "mode": "wizard"
+                                }
+                            },
+                            "JSopenParams": "height=300,width=500,status=0,menubar=0,scrollbars=1",
+                            "params": {
+                                "blindLinkOptions": "file,mail,page,folder",
+                                "allowedExtensions": ""
+                            }
+                        }
+                    },
+                    "eval": "",
+                    "default": "",
+                    "placeholder": "",
+                    "size": ""
+                },
+                "exclude": "1",
+                "key": "agencyhomepage"
+            },
+            "tx_mask_agencylogo": {
+                "exclude": "1",
+                "options": "file",
+                "config": {
+                    "behaviour": {
+                        "localizationMode": "select"
+                    },
+                    "minitems": "",
+                    "maxitems": "1",
+                    "filter": [
+                        {
+                            "parameters": {
+                                "allowedFileExtensions": "png,jpg,svg"
+                            }
+                        }
+                    ]
+                },
+                "key": "agencylogo"
+            },
+            "tx_mask_agencyfootertext": {
+                "config": {
+                    "type": "text",
+                    "eval": "",
+                    "cols": "",
+                    "rows": "",
+                    "default": "",
+                    "placeholder": "",
+                    "max": ""
+                },
+                "exclude": "1",
+                "defaultExtras": "richtext[]:rte_transform[mode=ts_css]",
+                "key": "agencyfootertext"
+            },
+            "tx_mask_quickform_show": {
+                "config": {
+                    "type": "check",
+                    "items": [
+                        [
+                            "Formular anzeigen",
+                            "1"
+                        ]
+                    ],
+                    "cols": "",
+                    "default": "0"
+                },
+                "exclude": "1",
+                "key": "quickform_show"
+            }
+        }
+    },
+    "sys_file_reference": {
+        "sql": {
+            "tx_mask_agencylogo": {
+                "sys_file_reference": {
+                    "tx_mask_agencylogo": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            }
+        }
+    }
+}

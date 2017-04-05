@@ -1,0 +1,6 @@
+<f:if condition="{data.image}">
+<f:for each="{data.image}" as="file">
+<f:image image="{file}" alt="{file.alternative}" title="{file.title}" width="200" /><br />
+<f:if condition="{file.description}">{file.description} / </f:if>{file.identifier}<br />
+</f:for>
+</f:if>
