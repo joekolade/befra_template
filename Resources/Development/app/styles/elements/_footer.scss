@@ -1,0 +1,23 @@
+//
+// Footer
+//
+footer {
+  background: $footer-bg-color;
+  padding-top: 40px;
+  padding-bottom: $grid-gutter-width/2;
+
+  &.superfooter {
+    background: $superfooter-bg-color;
+    color: $superfooter-color;
+
+    border: solid white;
+    border-width: 1px 0;
+  }
+}
+
+nav.meta {
+  display: block;
+  @media screen and (min-width: $screen-md-min) {
+    display: none;
+  }
+}

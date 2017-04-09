@@ -1,0 +1,11 @@
+body .cc_container {
+    .cc_btn,
+    .cc_btn:visited {
+        color: #fff;
+        background-color: $brand-warning;
+    }
+    a,
+    a:visited {
+        color: $brand-warning;
+    }
+}

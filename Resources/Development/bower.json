@@ -1,20 +1,21 @@
 {
-  "name": "development",
+  "name": "seyboldburka-template",
   "private": true,
   "dependencies": {
-    "bootstrap": "~4.0.0-alpha.6",
+    "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.1"
   },
   "overrides": {
-    "bootstrap": {
+    "bootstrap-sass": {
       "main": [
-        "scss/bootstrap.scss",
-        "dist/js/bootstrap.js"
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
       ]
     }
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.2.0"
+    "mocha": "^3.1.2"
   }
 }

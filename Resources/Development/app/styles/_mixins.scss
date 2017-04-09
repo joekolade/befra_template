@@ -1,0 +1,4 @@
+// Default transtition
+@mixin transit($property: all, $duration: 0.3s, $ease: linear){
+  transition: $property $duration $ease;
+}

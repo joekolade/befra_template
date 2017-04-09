@@ -1,0 +1,63 @@
+//
+// Variables
+//
+
+
+// Colors
+//
+
+$orange: #ff7d00;
+$orange-dark: #e97100;
+$gray: #b6b6b6;
+$gray-dark: #333333;
+$gray-special: #4d4d4d;
+$gray-middle: #878787;
+$blue: #00a5e9;
+$blue-light: #dbeefb;
+$blue-dark: #c2cdd5;
+
+$brand-warning: $orange;
+
+$link-hover-decoration: underline;
+$link-color: $gray-dark;
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-rounded: false;
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:               12;
+$grid-gutter-width-base:     30px;
+$grid-gutter-width: $grid-gutter-width-base;
+
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-base: 'Open Sans', sans-serif;
+
+$font-size-base: .9375rem;
+//$font-size-lg:   1.25rem !default;
+//$font-size-sm:   .875rem !default;
+//$font-size-xs:   .75rem !default;
+
+$font-weight-bold: 700;
+$font-weight-base: 300;
+
+$font-size-h1: 2.5rem;
+$font-size-h2: 2.1rem;
+$font-size-h3: 1.1875rem;
+$font-size-h4: 1.1rem;
+$font-size-h5: 1rem;
+$font-size-h6: 1rem;
+
+//$headings-margin-bottom: ($spacer / 2) !default;
+$headings-font-weight: 300;
+//$headings-line-height:   1.1 !default;
+//$headings-color:         inherit !default;

@@ -1,0 +1,32 @@
+// Spacer
+//
+
+$spacer-heights: 0 10 20 40 60 80;
+
+@each $h in $spacer-heights {
+  .spacer-xs-#{$h} {
+      margin-top: #{$h}px;
+  }
+}
+
+@media screen and (min-width: $screen-sm-min){
+    @each $h in $spacer-heights {
+      .spacer-sm-#{$h} {
+          margin-top: #{$h}px;
+      }
+    }
+}
+@media screen and (min-width: $screen-md-min){
+    @each $h in $spacer-heights {
+      .spacer-md-#{$h} {
+          margin-top: #{$h}px;
+      }
+    }
+}
+@media screen and (min-width: $screen-lg-min){
+    @each $h in $spacer-heights {
+      .spacer-lg-#{$h} {
+          margin-top: #{$h}px;
+      }
+    }
+}

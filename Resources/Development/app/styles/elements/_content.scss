@@ -1,0 +1,119 @@
+//
+// Content
+//
+h1,h2,h3 {
+  line-height: 1.2;
+  font-weight: 400;
+
+  small {
+    color: inherit;
+    font-size: 1em;
+  }
+
+  &.light {
+    font-weight: 400;
+  }
+
+  div[class*=col-] > :first-child > &{
+    margin-top: 0;
+  }
+
+}
+
+a {
+
+  text-decoration: underline;
+
+  &.button-link,
+  &.btn {
+    @include transit(background-color);
+  }
+  &.button-link {
+    color: $btn-warning-color;
+    background-color: $btn-warning-bg;
+    border-color: $btn-warning-border;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: $btn-font-weight;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: $padding-base-vertical $padding-base-horizontal;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    border-radius: 0;
+    user-select: none;
+
+    margin-bottom: 1.5em;
+
+    width: auto;
+
+    &:hover {
+      background-color: darken($btn-warning-bg, 15%);
+      border-color: darken($btn-warning-border, 15%);
+    }
+  }
+}
+
+b, strong {
+  font-weight: 600;
+}
+.align {
+  &-left {
+    text-align: left;
+  }
+  &-center {
+    text-align: center;
+  }
+  &-right {
+    text-align: right;
+  }
+}
+
+.content {
+  .row {
+    margin-bottom: 35px;
+
+    // First header
+    > div > .layout0:first-child {
+      > h1, > h2 {
+        margin-top: 0;
+      }
+    }
+
+  }
+
+  .indent, .layout1 {
+    .ce-gallery {
+      float: none;
+    }
+    h1,h2,h3,h4,p,ul,ol {
+      margin-left: $grid-gutter-width/2;
+      margin-right: $grid-gutter-width/2;
+    }
+  }
+
+  // Border für images
+  .border-1 {
+    picture {
+      border: 1px solid $grey;
+
+      img {
+        border: none;
+      }
+    }
+  }
+}
+
+
+// rounded images
+//
+.img-rounded {
+  img, picture {
+    border-radius: 50%;
+  }
+}

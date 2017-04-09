@@ -1,0 +1,37 @@
+//
+// Stage styles
+//
+.stage {
+  background: $stage-bg-color;
+  max-height: 0;
+  overflow: hidden;
+  margin-bottom: 40px;
+  position: relative;
+  padding-left: 0;
+
+  .stageInner {
+    margin-left: -$grid-gutter-width/2;
+    margin-right: -$grid-gutter-width/2;
+    border-bottom: 1px solid white;
+  }
+
+
+
+  /* Responsive: Portrait tablets and up */
+  @media screen and (min-width: 768px) {
+    border-bottom: 10px solid $grey;
+    margin-bottom: $stage-sm-bottom;
+    max-height: 999px;
+
+    .tx-go-maps-ext,
+    .embed-responsive {
+      min-height: 300px;
+    }
+    .tx-go-maps-ext {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  }
+
+
+}

@@ -1,0 +1,96 @@
+//
+// Quick form
+//
+.quick {
+  display: none;
+  position: relative;
+  margin-right: $grid-gutter-width/2;
+  margin-left: $grid-gutter-width/2;
+
+  .quickInner {
+    position: absolute;
+    width: $quickform-width;
+    right: 0;
+    top: -$stage-sm-bottom - 11px - $quickform-toggle-height;
+
+    a.btn[data-toggle="collapse"] {
+      text-align: left;
+      font-weight: normal;
+      font-size: 20px;
+      height: $quickform-toggle-height;
+      line-height: $quickform-toggle-height * 0.7;
+      display: block;
+      background-color: rgba($blue, 0.7);
+      border: none;
+      text-decoration: none;
+
+      i {
+        background: none;
+        font-size: 1.2em;
+        line-height: 1.3;
+        position: absolute;
+        right: 0;
+      }
+
+      .open, .closed {
+        display: inline;
+      }
+      .open {
+        display: none;
+      }
+      &[aria-expanded="true"] {
+        .closed {
+          display: none;
+        }
+        .open {
+          display: inline;
+        }
+      }
+    }
+
+    > * {
+      width: 100%;
+    }
+  }
+
+  .footer {
+    margin-top: 1px;
+    line-height: 1;
+
+    a {
+      font-weight: 600;
+      color: white;
+      font-size: 1.3em;
+      text-decoration: none;
+      .fa {
+        font-size: 1.2em;
+        position: relative;
+        top: 3px;
+        margin-right: 0.25em;
+      }
+    }
+  }
+
+  #quickFormCollapse {
+    position: absolute;
+    top: 11px + $quickform-toggle-height + 1px;
+    z-index: 12;
+    > * {
+      background-color: $blue;
+      padding: 20px 15px;
+    }
+    .footer {
+      padding-top: 12px;
+      padding-bottom: 12px + 2px;
+    }
+  }
+
+  /* Responsive: Portrait tablets and up */
+  @media screen and (min-width: $screen-sm-min) {
+    display: block;
+  }
+}
+
+#quickFormCollapse {
+
+}

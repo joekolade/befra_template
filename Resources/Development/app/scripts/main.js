@@ -1,33 +1,59 @@
 console.log('\'Allo \'Allo!');
 
-$(document).ready(function() {
-    // Custom
-    var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
-        var stickyHeight = sticky.outerHeight();
-        var stickyTop = stickyWrapper.offset().top;
-        if (scrollElement.scrollTop() >= stickyTop){
-            stickyWrapper.height(stickyHeight);
-            sticky.addClass("is-sticky");
+$(function(){
+  'use strict';
+
+  var
+    $menu = $('.container.nav'),
+    $subnav = $('ul.subnav', $menu),
+
+    // Scroller
+    $scroller = $('.scroller')
+  ;
+
+  // Menu
+  if($menu.length){
+    $menu.affix({
+      offset: {
+        top: $('header.container').first().outerHeight(true),
+        bottom: function () {
+            return $('footer.container').first().height() + $('footer.superfooter').height() - $menu.height();
         }
-        else{
-            sticky.removeClass("is-sticky");
-            stickyWrapper.height('auto');
-        }
-    };
-
-    // Find all data-toggle="sticky-onscroll" elements
-    $('[data-toggle="sticky-onscroll"]').each(function() {
-        var sticky = $(this);
-        var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page
-        sticky.before(stickyWrapper);
-        sticky.addClass('sticky');
-
-        // Scroll & resize events
-        $(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function() {
-            stickyToggle(sticky, stickyWrapper, $(this));
-        });
-
-        // On page load
-        stickyToggle(sticky, stickyWrapper, $(window));
+      }
     });
+  }
+
+  // Subnav for mobile
+  if($subnav.length){
+    $subnav.each(function(){
+      var $sn = $(this);
+      $sn.prev('a').append(function(){
+        var $i;
+        $i = $('<i />')
+          .addClass('fa fa-angle-down')
+          .click(function(e){
+            e.preventDefault();
+            $(this).parent('a').toggleClass('open')
+              .next('ul.subnav').toggleClass('open');
+          });
+        return $i;
+      });
+    });
+  }
+
+  if($scroller.length){
+    $(window).scroll(function(){
+      var
+        height = $(document).height(), // 1915
+        scrollTop = $(document).scrollTop(),
+        windowH = $(window).height(),
+        navbarHeight = $menu.height() - $scroller.height() - 2
+      ;
+
+      $scroller.css({
+        top: navbarHeight * scrollTop / (height-windowH)
+      });
+
+    });
+  }
 });
