@@ -1,0 +1,20 @@
+
+// Logo
+//
+
+header .logo {
+  max-width: 80%;
+  padding: 1rem 0;
+
+  @include media-breakpoint-up(sm){
+    max-width: 65%;
+  }
+
+  @include media-breakpoint-up(md){
+    max-width: 35%;
+  }
+
+  @include media-breakpoint-up(lg){
+    max-width: 420px;
+  }
+}
