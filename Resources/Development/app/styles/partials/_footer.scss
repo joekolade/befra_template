@@ -58,7 +58,7 @@ body {
   position: fixed;
   bottom: 0;
   height: 236px;
-  width: 100%;
+  max-width: 100%;
 }
 
 @media screen and (min-width: $screen-sm-min) {

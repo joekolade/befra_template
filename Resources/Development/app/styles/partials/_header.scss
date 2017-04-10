@@ -1,13 +1,15 @@
-//
+
 // Header styles
 //
+
 header.container {
-  min-height: 119px;
+  min-height: 82px;
   background-color: $header-bg;
   position: relative;
 
   .logoWrap {
-    margin: 41px 23px 0;
+    margin: 41px 15px 21px;
+    margin-top: $header-offset;
     max-width: 50%;
 
     .logo {
@@ -18,16 +20,13 @@ header.container {
       }
     }
   }
-  .claim {
-    font-size: 0.8em;
-  }
 
 
   /* Responsive: Portrait tablets and up */
   @media screen and (min-width: 768px) {
-    .logoWrap{
+    .logoWrap {
       margin-left: 82px;
-      margin-top: 58px;
+      //margin-top: #{$line-height-base}rem;
       max-width: 60%;
     }
     .claim {
@@ -51,32 +50,21 @@ header.container {
 }
 
 
+// Meta navigation oben im header
+//
 
 .metaNavi {
   text-align: right;
   font-size: $font-size-small;
-  border: solid white;
-  border-width: 0 0 1px;
 
   margin-right: -$grid-gutter-width/2;
   margin-left: -$grid-gutter-width/2;
 
-  padding: 0 $grid-gutter-width/2;
+  outline: thin solid lime;
 
-  background: lighten($orange, 5%);
-
-  color: $grey-dark;
-  a {
-    color: $grey-dark;
-  }
+  @include textcolor($grey-dark);
 
   nav.lang {
-    position: absolute;
-    z-index: 12;
-    right: 15px;
-    top: -80px;
-
-
     li {
       min-width: 0;
       opacity: $flag-opacity;
@@ -94,7 +82,10 @@ header.container {
   }
 
   nav.meta {
-    display: none;
+    display: flex;
+    text-align: left;
+    justify-content: flex-end;
+
     a {
       margin-right: $grid-gutter-width/2;
     }
@@ -102,49 +93,11 @@ header.container {
 
   /* Responsive: MINI | < 320 */
   @media screen and (max-width: 320px) {
+
   }
 
   /* Responsive: Portrait tablets and up */
   @media screen and (min-width: 768px) {
-    position: absolute;
-    top: -98px;
-    right: $grid-gutter-width/2;
-    background: none;
-    border: none;
-    width: 178px;
-    text-align: left;
 
-    color: $meta-menu-color;
-    a {
-      color: $meta-menu-color;
-    }
-
-    nav.lang {
-      text-align: left;
-      float: none;
-      position: static;
-    }
-    nav.meta {
-      display: block;
-      a.btn {
-        display: block;
-        padding: 0;
-        text-align: left;
-        font-size: $font-size-small;
-      }
-      // homelink
-      a:first-child,
-      a[href="/"]{
-        position: absolute;
-        left: -$home-icon-width;
-        width: $home-icon-width;
-        height: $home-icon-width;
-        text-align: center;
-        border-radius: 4px;
-        border: $home-icon-border;
-        font-size: $font-size-large;
-        padding-top: 7px;
-      }
-    }
   }
 }

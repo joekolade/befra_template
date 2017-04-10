@@ -45,17 +45,20 @@ $brand-warning: $orange;
 $link-hover-decoration: underline;
 $link-color: $grey-dark;
 
+// Header
 //
+
+$header-offset: 2rem;
+
 // Langmenu
 //
 $flag-opacity: 0.4;
 $flag-border: thin solid white;
 
 $meta-menu-color: $grey-middle;
-$home-icon-width: 40px;
+$home-icon-width: 30px;
 $home-icon-border: 1px solid $meta-menu-color;
 
-//
 // Navbar
 //
 $navbar-height: 45px;
@@ -63,6 +66,7 @@ $navbar-margin-bottom: 0;
 $navbar-default-color: white;
 $navbar-default-bg: $orange;
 $navbar-default-border: white;
+
 // Navbar links
 $navbar-default-link-color: white;
 $navbar-default-link-hover-color: white;
@@ -77,19 +81,16 @@ $navbar-default-toggle-border-color:       none;
 
 $item-min-width: 160px;
 
-//
 // Stage
 //
 $stage-bg-color: $grey;
 $stage-sm-bottom: 70px;
 
-//
 // Quick form
 //
 $quickform-width: 352px;
 $quickform-toggle-height: 45px;
 
-//
 // Footer
 //
 // $footer-color: $text-color;
