@@ -1,9 +1,11 @@
 //
 // Navigation styles
 //
-.container.nav {
+.wrapper .container.nav {
   // margin-left: 15px;
-  padding-right: 0;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
 }
 
 .navbar {
@@ -13,14 +15,29 @@
   font-size: 19px;
   line-height: 1.2;
 
+  > .container-fluid {
+    max-width: $wrapper-max-width;
+    margin: 0 auto -1px;
+  }
   &-nav {
     margin-bottom: -1px;
     display: flex;
     flex-direction: column;
+    flex: 1 1 auto;
+    max-width: 100%;
+    width: 100%;
+    flex-shrink: 1;
+    flex-grow: 1;
+    justify-content: flex-start;
+    > li > a {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
   }
 
   li {
     min-width: $item-min-width - 40px;
+    max-width: 100vw;
 
     a {
       background-color: $navbar-default-bg;
@@ -82,10 +99,21 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 150%;
+    position: absolute;
     transition: max-height 0.3s linear;
 
+    background: $navbar-sub-default-bg;
+    //: $gray-dark;
+    //$navbar-sub-default-link-hover-color: white;
+    //: $orange;
+    //$navbar-sub-default-link-active-color: white;
+    //$navbar-sub-default-link-active-bg: $orange;
+
+    font-size: 15px;
+
     .subnav {
+      width: 100%;
       z-index: 22;
       top: 0;
       left: 100%;
@@ -95,16 +123,26 @@
       }
     }
 
-    li {
+    > li {
       margin: 0;
       padding: 0;
       padding-top: 1px;
-      a {
+      color: $navbar-sub-default-link-color;
+      > a {
+        background-color: $navbar-sub-default-bg;
+        color: $navbar-sub-default-link-color;
         display: block;
         // padding: 11px 15px 12px;
         padding: 9px 15px;
         padding-left: ($grid-gutter-width * 1.5);
 
+      }
+
+      > a:hover,
+      > a:active,
+      &.active > a {
+        background-color: $navbar-sub-default-link-hover-bg;
+        color: $navbar-sub-default-link-hover-color;
       }
     }
 
@@ -117,8 +155,7 @@
     }
   }
 
-  /* Responsive: Portrait tablets and up */
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $navbar-breakpoint) {
     &-nav {
       flex-direction: row;
     }
@@ -165,12 +202,14 @@
   /* Responsive: Portrait tablets and up */
   @media screen and (min-width: 1000px) {
     li {
-      min-width: $item-min-width;
+      //min-width: $item-min-width;
     }
   }
 }
 
 // Affix
+//
+
 .affix {
   position: static;
 
@@ -188,7 +227,9 @@
 
 }
 
-// Toggle mobile
+// Toggle in mobile
+//
+
 a {
 
   > i.fa-angle-down,
@@ -211,28 +252,50 @@ a {
   }
 }
 
-// Scrollwrapper
-.navbar .container-fluid {
-  position: relative;
-}
-.navbar-right {
-  position: absolute;
-  right: $grid-gutter-width * 1.5;
-  top: 0;
-  height: 100%;
-}
-.scrollWrapper {
-  height: 100%;
-  width: 12px;
-  background: $orange;
-  border: solid white;
-  border-width: 0 1px;
-  position: relative;
-  z-index: 2;
 
-  .scroller {
-    background: white;
-    height: 5px;
-    position: relative;
+
+@media (max-width: $navbar-breakpoint) {
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,.navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+    margin-bottom: 2px;
+  }
+  .navbar-collapse.collapse a {
+    border: none;
+  }
+  .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+    display: block;
+    margin: 0;
+    margin-bottom: -1px;
+    padding: 0;
+  }
+  .navbar-nav>li {
+    float: none;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in{
+    display:block !important;
+  }
+  .navbar .subnav {
+    max-width: 100%;
+    display: block;
+    position: static;
+
+    .subnav {
+      padding-left: 0;
+    }
   }
 }

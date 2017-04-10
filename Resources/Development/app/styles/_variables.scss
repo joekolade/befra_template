@@ -70,6 +70,8 @@ $navbar-default-color: white;
 $navbar-default-bg: $orange;
 $navbar-default-border: white;
 
+$navbar-breakpoint: 992px;
+
 // Navbar links
 //
 
@@ -78,6 +80,13 @@ $navbar-default-link-hover-color: white;
 $navbar-default-link-hover-bg: $orange-dark;
 $navbar-default-link-active-color: white;
 $navbar-default-link-active-bg: $orange-dark;
+
+$navbar-sub-default-bg: $white;
+$navbar-sub-default-link-color: $gray-dark;
+$navbar-sub-default-link-hover-color: white;
+$navbar-sub-default-link-hover-bg: $orange;
+$navbar-sub-default-link-active-color: white;
+$navbar-sub-default-link-active-bg: $orange;
 
 // Navbar toggle
 //
