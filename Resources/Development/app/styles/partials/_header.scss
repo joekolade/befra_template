@@ -29,9 +29,6 @@ header.container {
       //margin-top: #{$line-height-base}rem;
       max-width: 60%;
     }
-    .claim {
-      font-size: 1.2em;
-    }
     .logo img,
     .logo svg,
     .logo {
@@ -42,9 +39,6 @@ header.container {
   }
 
   @media screen and (min-width: 450px) {
-    .claim {
-      font-size: 1em;
-    }
   }
 
 }
@@ -56,13 +50,14 @@ header.container {
 .metaNavi {
   text-align: right;
   font-size: $font-size-small;
+  margin-bottom: 21px;
 
   margin-right: -$grid-gutter-width/2;
   margin-left: -$grid-gutter-width/2;
 
   outline: thin solid lime;
 
-  @include textcolor($grey-dark);
+  @include textcolor($gray-dark);
 
   nav.lang {
     li {

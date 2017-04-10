@@ -33,9 +33,9 @@ $white: #ffffff;
 $orange: #f37d00;
 $orange-dark: #e97100;
 $grey: #b6b6b6;
-$grey-dark: #333333;
-$grey-special: #4d4d4d;
-$grey-middle: #878787;
+$gray-dark: #333333;
+$gray-special: #4d4d4d;
+$gray-middle: #878787;
 $blue: #00a5e9;
 $blue-light: #dbeefb;
 $blue-dark: #c2cdd5;
@@ -43,7 +43,7 @@ $blue-dark: #c2cdd5;
 $brand-warning: $orange;
 
 $link-hover-decoration: underline;
-$link-color: $grey-dark;
+$link-color: $gray-dark;
 
 // Header
 //
@@ -55,7 +55,7 @@ $header-offset: 2rem;
 $flag-opacity: 0.4;
 $flag-border: thin solid white;
 
-$meta-menu-color: $grey-middle;
+$meta-menu-color: $gray-middle;
 $home-icon-width: 30px;
 $home-icon-border: 1px solid $meta-menu-color;
 
