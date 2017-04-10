@@ -73,6 +73,7 @@ body {
 
 // Fetch quickform styles
 @import "elements/quickform";
+@import "partials/footer";
 
 // Fetch form styles
 @import "elements/forms";
@@ -80,8 +81,6 @@ body {
 // Fetch content styles
 @import "elements/content";
 
-// Fetch footer styles
-@import "elements/footer";
 
 // Spacer Element (Mask)
 @import "elements/spacer_mask";
