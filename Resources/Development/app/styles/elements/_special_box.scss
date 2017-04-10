@@ -1,0 +1,28 @@
+.specialBox {
+  background: $specialbox-bg-color;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include textcolor($white);
+
+  div[class^="col-"] {
+    width: 100%;
+
+    &:first-child {
+      min-height: 275px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    &:last-child {
+      min-height: 280px;
+    }
+  }
+
+  @media screen and (min-width: $screen-sm-min) {
+    div[class^="col-"] {
+      width: 50%;
+    }
+  }
+
+}

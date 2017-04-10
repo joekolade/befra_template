@@ -31,6 +31,8 @@ $font-size-h3:            ceil(($font-size-base * 1.33333)); // ~20px
 //
 
 $white: #ffffff;
+$black: #000000;
+
 $orange: #f37d00;
 $orange-dark: #e97100;
 $grey: #b6b6b6;
@@ -120,3 +122,8 @@ $footer-color: $white;
 
 $superfooter-color: white;
 $superfooter-bg-color: $blue-dark;
+
+// Special Box
+//
+
+$specialbox-bg-color: $black;

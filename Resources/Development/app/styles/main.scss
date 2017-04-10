@@ -60,32 +60,28 @@ body {
 
 
 
-// Images
-@import "elements/responsive_images";
 
-// Fetch header styles
+
+// Partials
+
 @import "partials/header";
-
-// Fetch navigation styles
 @import "partials/navigation";
-
-// Fetch stage styles
 @import "partials/stage";
-
-// Fetch quickform styles
-@import "elements/quickform";
+@import "partials/btn-special";
 @import "partials/footer";
 @import "partials/btn-special";
 
-// Fetch form styles
+// Elements
+
+@import "elements/responsive_images";
+@import "elements/quickform";
 @import "elements/forms";
-
-// Fetch content styles
 @import "elements/content";
-
-
-// Spacer Element (Mask)
 @import "elements/spacer_mask";
+@import "elements/special_box";
 
-// EXT:cookieconsent2
+
+
+// Extensions
+
 @import "extensions/cookieconsent2";
