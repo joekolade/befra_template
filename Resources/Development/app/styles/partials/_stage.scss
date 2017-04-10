@@ -41,18 +41,21 @@
   }
 
   @media screen and (min-width: $screen-sm-min) {
-    .caption {
-      width: 40vw;
-      transform: translate(30vw, 0%);
-      opacity: 0.2;
-      border-radius: 8px;
-      padding: 0 $grid-gutter-width $grid-gutter-width/2;
+    .slick-slide {
+      .caption {
+        width: 34vw;
+        transform: translate(33vw, 0%);
+        opacity: 0;
+        border-radius: 8px;
+        padding: 0 $grid-gutter-width $grid-gutter-width/2;
 
-      transition: opacity $default-transition-duration $default-transition-ease 1s;
-    }
-    .slick-active .caption {
-      opacity: 1;
-      transition-delay: 0s;
+        transition: opacity $default-transition-duration $default-transition-ease;
+      }
+
+      &.slick-current .caption {
+        opacity: 1;
+        transition-delay: 1s;
+      }
     }
 
   }
