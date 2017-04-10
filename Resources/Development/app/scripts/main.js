@@ -16,6 +16,7 @@ $(function () {
             adaptiveHeight: 1,
             speed: 800,
             lazyLoad: 'progressive',
+            pauseOnHover: false,
             // fade: true,
             autoplaySpeed: 5000
         }
