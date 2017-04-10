@@ -3,10 +3,14 @@
 //
 footer {
   background: $footer-bg-color;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 40px;
 
   @include textcolor($footer-color);
+
+  h2 {
+    font-size: $font-size-h1;
+  }
 
   ul {
     margin: 1.5em 0;
