@@ -15,7 +15,31 @@
       background-size: cover;
     }
     &:last-child {
+
+      padding: $grid-gutter-width;
       min-height: 280px;
+
+      > h1,h2,h3,h4 {
+        font-weight: bold;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  form {
+    label {
+      display: none;
+    }
+    .checkbox label {
+      display: block;
+    }
+    input[type=submit],
+    button[type=submit] {
+      width: 100%;
+      text-align: left;
     }
   }
 
