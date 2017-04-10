@@ -29,7 +29,8 @@ $font-size-h3:            ceil(($font-size-base * 1.33333)); // ~20px
 //
 // Colors
 //
-$orange: #ff7d00;
+$white: #ffffff;
+$orange: #f37d00;
 $orange-dark: #e97100;
 $grey: #b6b6b6;
 $grey-dark: #333333;
@@ -92,7 +93,8 @@ $quickform-toggle-height: 45px;
 // Footer
 //
 // $footer-color: $text-color;
-$footer-bg-color: $blue-light;
+$footer-bg-color: $orange;
+$footer-color: $white;
 
 $superfooter-color: white;
 $superfooter-bg-color: $blue-dark;
