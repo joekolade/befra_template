@@ -16,8 +16,7 @@
   line-height: 1.2;
 
   > .container-fluid {
-    max-width: $wrapper-max-width;
-    margin: 0 auto -1px;
+    margin: 0 -15px;
   }
   &-nav {
     margin-bottom: -1px;
@@ -164,6 +163,9 @@
     > .container-fluid {
       padding-left: 0;
       padding-right: 0;
+
+      max-width: $wrapper-max-width;
+      margin: 0 auto -1px;
     }
 
     ul {
@@ -207,6 +209,29 @@
   }
 }
 
+// Toggle menu button
+//
+.navbar-header {
+  background: $gray-light;
+  margin-left: -15px;
+  margin-right: -15px;
+  width: 100%;
+}
+.navbar .navbar-toggle {
+  float: right;
+  background: $orange;
+  margin: 0;
+  padding: .75em;
+  .icon-bar {
+    background-color: black;
+    border-radius: 2px;
+  }
+
+  &:active .icon-bar {
+    background-color: white;
+  }
+}
+
 // Affix
 //
 
@@ -214,20 +239,30 @@
   position: static;
 
   /* Responsive: Portrait tablets and up */
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $navbar-breakpoint) {
     position: fixed;
     top: 0;
     margin: 0 !important;
     z-index: 29;
     width: 100% !important;
+    max-width: 100% !important;
+
     > nav {
       width: 100%;
+    }
+
+    .container-fluid {
+      max-width: 100%;
+    }
+
+    .navbar-nav {
+
     }
   }
 
 }
 
-// Toggle in mobile
+// Toggle submenu in mobile
 //
 
 a {
@@ -253,7 +288,6 @@ a {
 }
 
 
-
 @media (max-width: $navbar-breakpoint) {
   .navbar-header {
     float: none;
@@ -268,7 +302,8 @@ a {
     display: none!important;
     margin-bottom: 2px;
   }
-  .navbar-collapse.collapse a {
+  .navbar .navbar-collapse a.open,
+  .navbar-collapse.collapse .subnav a {
     border: none;
   }
   .navbar-nav {
