@@ -8,6 +8,7 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -102,10 +103,26 @@
         </nav>
     </div>
     <div class="container stage">
-        <div class="stageInner">
-            <img src="images/Befra_Slider_01.jpg" class="img-responsive">
+        <div class="stageInner slickslider">
+            <div class="slide">
+                <img data-lazy="images/Befra_Slider_01.jpg" class="img-responsive">
+                <div class="caption">
+                    <h2>mobile <b>Trafostationen</b></h2>
+                    <p>
+                        Geschützt dolor sit amet, consectetuer sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consectetuer  diam weiterlesen  . . .
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <img data-lazy="images/Befra_Slider_01.jpg" class="img-responsive">
+                <div class="caption">
+                    <h2>stationäre <b>Trafostationen</b></h2>
+                    <p>
+                        Geschützt dolor sit amet, consectetuer sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consectetuer  diam weiterlesen  . . .
+                    </p>
+                </div>
+            </div>
         </div>
-        <!-- opt: formular (desktop only) -->
     </div>
 
     <div class="container content">
@@ -287,6 +304,7 @@
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->
 <script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/slick-carousel/slick/slick.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 

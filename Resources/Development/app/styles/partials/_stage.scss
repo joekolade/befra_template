@@ -3,8 +3,6 @@
 //
 .stage {
   background: $stage-bg-color;
-  max-height: 0;
-  overflow: hidden;
   margin-bottom: 40px;
   position: relative;
   padding-left: 0;
@@ -13,6 +11,12 @@
     margin-left: -$grid-gutter-width/2;
     margin-right: -$grid-gutter-width/2;
     border-bottom: 1px solid white;
+  }
+
+  .caption {
+    background-color: $stage-caption-bg;
+    @include textcolor($white);
+    padding: $grid-gutter-width/2;
   }
 
 

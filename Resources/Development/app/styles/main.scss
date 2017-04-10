@@ -12,7 +12,7 @@ $fa-font-path: "../fonts";
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-@import "bower_components/font-awesome/scss/font-awesome.scss";
+@import "bower_components/slick-carousel/slick/slick.scss";
 // endbower
 
 .browserupgrade {
@@ -69,7 +69,7 @@ body {
 @import "partials/navigation";
 
 // Fetch stage styles
-@import "elements/stage";
+@import "partials/stage";
 
 // Fetch quickform styles
 @import "elements/quickform";

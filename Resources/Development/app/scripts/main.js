@@ -1,59 +1,57 @@
 console.log('\'Allo \'Allo!');
 
-$(function(){
-  'use strict';
+$(function () {
+    'use strict';
 
-  var
-    $menu = $('.container.nav'),
-    $subnav = $('ul.subnav', $menu),
+    var
+        $menu = $('.container.nav'),
+        $subnav = $('ul.subnav', $menu),
 
-    // Scroller
-    $scroller = $('.scroller')
-  ;
-
-  // Menu
-  if($menu.length){
-    $menu.affix({
-      offset: {
-        top: $('header.container').first().outerHeight(true),
-        bottom: function () {
-            return $('footer.container').first().height() + $('footer.superfooter').height() - $menu.height();
+        // Slickslider
+        $slick = $('.slickslider'),
+        slickOptions = {
+            dots: false,
+            arrows: false,
+            autoplay: 1,
+            adaptiveHeight: 1,
+            speed: 800,
+            lazyLoad: 'progressive',
+            // fade: true,
+            autoplaySpeed: 5000
         }
-      }
-    });
-  }
+    ;
 
-  // Subnav for mobile
-  if($subnav.length){
-    $subnav.each(function(){
-      var $sn = $(this);
-      $sn.prev('a').append(function(){
-        var $i;
-        $i = $('<i />')
-          .addClass('fa fa-angle-down')
-          .click(function(e){
-            e.preventDefault();
-            $(this).parent('a').toggleClass('open')
-              .next('ul.subnav').toggleClass('open');
-          });
-        return $i;
-      });
-    });
-  }
+    // Menu
+    if ($menu.length) {
+        $menu.affix({
+            offset: {
+                top: $('header.container').first().outerHeight(true),
+                bottom: function () {
+                    return $('footer.container').first().height() + $('footer.superfooter').height() - $menu.height();
+                }
+            }
+        });
+    }
 
-  if($scroller.length){
-    $(window).scroll(function(){
-      var
-        height = $(document).height(), // 1915
-        scrollTop = $(document).scrollTop(),
-        windowH = $(window).height(),
-        navbarHeight = $menu.height() - $scroller.height() - 2
-      ;
+    // Subnav for mobile
+    if ($subnav.length) {
+        $subnav.each(function () {
+            var $sn = $(this);
+            $sn.prev('a').append(function () {
+                var $i;
+                $i = $('<i />')
+                    .addClass('fa fa-angle-down')
+                    .click(function (e) {
+                        e.preventDefault();
+                        $(this).parent('a').toggleClass('open')
+                            .next('ul.subnav').toggleClass('open');
+                    });
+                return $i;
+            });
+        });
+    }
 
-      $scroller.css({
-        top: navbarHeight * scrollTop / (height-windowH)
-      });
-
-    });
-  }
+    if ($slick.length) {
+        $slick.slick(slickOptions);
+    }
 });
