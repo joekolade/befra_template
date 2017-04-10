@@ -1,5 +1,5 @@
-//
-// Variables for Fetscher Projekt
+
+// Variables for Befra Projekt
 //
 
 $wrapper-max-width: 1200px;
@@ -14,7 +14,7 @@ $default-transition: $default-transition-property $default-transition-duration $
 
 //
 // Font-size
-//
+
 $font-size-base:          15px;
 // $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~19px
 // $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~13px
@@ -26,9 +26,10 @@ $font-size-h3:            ceil(($font-size-base * 1.33333)); // ~20px
 // $font-size-h5:            $font-size-base !default;
 // $font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
 
-//
+
 // Colors
 //
+
 $white: #ffffff;
 $orange: #f37d00;
 $orange-dark: #e97100;
@@ -52,6 +53,7 @@ $header-offset: 2rem;
 
 // Langmenu
 //
+
 $flag-opacity: 0.4;
 $flag-border: thin solid white;
 
@@ -61,6 +63,7 @@ $home-icon-border: 1px solid $meta-menu-color;
 
 // Navbar
 //
+
 $navbar-height: 45px;
 $navbar-margin-bottom: 0;
 $navbar-default-color: white;
@@ -68,6 +71,8 @@ $navbar-default-bg: $orange;
 $navbar-default-border: white;
 
 // Navbar links
+//
+
 $navbar-default-link-color: white;
 $navbar-default-link-hover-color: white;
 $navbar-default-link-hover-bg: $orange-dark;
@@ -75,6 +80,8 @@ $navbar-default-link-active-color: white;
 $navbar-default-link-active-bg: $orange-dark;
 
 // Navbar toggle
+//
+
 $navbar-default-toggle-hover-bg:           $orange;
 $navbar-default-toggle-icon-bar-bg:        white;
 $navbar-default-toggle-border-color:       none;
@@ -83,17 +90,20 @@ $item-min-width: 160px;
 
 // Stage
 //
+
 $stage-bg-color: $grey;
 $stage-sm-bottom: 70px;
 
 // Quick form
 //
+
 $quickform-width: 352px;
 $quickform-toggle-height: 45px;
 
 // Footer
 //
 // $footer-color: $text-color;
+
 $footer-bg-color: $orange;
 $footer-color: $white;
 

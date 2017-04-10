@@ -26,7 +26,7 @@ header.container {
   @media screen and (min-width: 768px) {
     .logoWrap {
       margin-left: 82px;
-      //margin-top: #{$line-height-base}rem;
+      margin-top: #{$line-height-base + $line-height-base}rem;
       max-width: 60%;
     }
     .logo img,
@@ -55,11 +55,12 @@ header.container {
   margin-right: -$grid-gutter-width/2;
   margin-left: -$grid-gutter-width/2;
 
-  outline: thin solid lime;
-
   @include textcolor($gray-dark);
 
   nav.lang {
+    ul {
+      margin-bottom: 1rem;
+    }
     li {
       min-width: 0;
       opacity: $flag-opacity;
@@ -83,6 +84,8 @@ header.container {
 
     a {
       margin-right: $grid-gutter-width/2;
+      text-decoration: none;
+      font-weight: bold;
     }
   }
 
@@ -93,6 +96,7 @@ header.container {
 
   /* Responsive: Portrait tablets and up */
   @media screen and (min-width: 768px) {
-
+    margin-top: -2rem;
+    margin-right: 82px;
   }
 }
