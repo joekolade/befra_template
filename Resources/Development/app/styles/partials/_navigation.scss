@@ -235,8 +235,29 @@
 // Affix
 //
 
+//.nav .visible-affix {
+//  position: absolute;
+//  top: 50%;
+//  transform: translate(0, -50%);
+//  max-height: 0px;
+//  max-width: 0px;
+//  @include transit;
+//  opacity: 0;
+//  overflow: hidden;
+//
+//  a {
+//    border: none;
+//  }
+//
+//  img {
+//    height: 25px;
+//  }
+//}
+
 .affix {
   position: static;
+
+
 
   /* Responsive: Portrait tablets and up */
   @media screen and (min-width: $navbar-breakpoint) {
@@ -247,6 +268,13 @@
     width: 100% !important;
     max-width: 100% !important;
 
+    //.visible-affix {
+    //  display: block;
+    //  max-height: 100px;
+    //  max-width: 400px;
+    //  opacity: 1;
+    //}
+
     > nav {
       width: 100%;
     }
@@ -256,7 +284,7 @@
     }
 
     .navbar-nav {
-
+      justify-content: center;
     }
   }
 
