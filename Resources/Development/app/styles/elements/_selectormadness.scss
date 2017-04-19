@@ -4,4 +4,9 @@
 
 .selectorMadness {
 
+  select,
+  .select2-container {
+    display: inline-block;
+    margin-right: 1em;
+  }
 }

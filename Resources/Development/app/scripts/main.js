@@ -1,4 +1,3 @@
-console.log('\'Allo \'Allo!');
 
 $(function () {
     'use strict';
@@ -19,7 +18,11 @@ $(function () {
             pauseOnHover: false,
             // fade: true,
             autoplaySpeed: 5000
-        }
+        },
+
+        // Selects
+        $selectorMadness = $('.selectorMadness'),
+        $select = $('select', $selectorMadness)
     ;
 
     // Menu
@@ -35,6 +38,7 @@ $(function () {
     }
 
     // Subnav for mobile
+    //
     if ($subnav.length) {
         $subnav.each(function () {
             var $sn = $(this);
@@ -55,4 +59,21 @@ $(function () {
     if ($slick.length) {
         $slick.slick(slickOptions);
     }
+
+    $(document).ready(function () {
+        // Select2
+        //
+
+        $select.select2({
+            // No search box
+            minimumResultsForSearch: Infinity
+        }).change(function (e) {
+            e.preventDefault();
+            console.log($(this).val());
+
+            window.location.href = $(this).val();
+        });
+    });
+
+
 });
