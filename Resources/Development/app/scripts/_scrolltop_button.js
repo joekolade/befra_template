@@ -7,7 +7,7 @@ JSApp.toTopButton = {
 
     options: {
         // Content of the button
-        back_to_top_text: '<i class="fa fa-chevron-up"></i>',
+        back_to_top_text: '<i class="fa fa-arrow-up"></i>',
 
         // CSS class of the button
         back_to_top_class: 'back-to-top',
@@ -22,7 +22,7 @@ JSApp.toTopButton = {
         back_to_top_duration: 800,
 
         // Appender
-        appender: document.getElementsByClassName('container')[0]
+        appender: document.getElementsByClassName('wrapper')[0]
     },
 
     scrollTo: function(element, to, duration) {
@@ -68,7 +68,7 @@ JSApp.toTopButton = {
         button.innerHTML = this.options.back_to_top_text;
 
         button.addEventListener('click', function(){
-            var bod = document.documentElement || document.body;
+            var bod = document.body || document.documentElement;
             _this.scrollTo(bod, 0, _this.options.back_to_top_duration);
         });
 
@@ -90,6 +90,7 @@ JSApp.toTopButton = {
         });
     }
 };
+
 document.addEventListener('DOMContentLoaded', function() {
     JSApp.toTopButton.init();
 });

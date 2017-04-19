@@ -1,8 +1,9 @@
 // Vars
-$back-to-top_bg: $color-button-bg;
-$back-to-top_color: $color-button;
-$back-to-top_bg--hover: $color-button-bg;
-$back-to-top_color--hover: $color-button-hover;
+$back-to-top_bg: $orange;
+$back-to-top_color: $text-color;
+$back-to-top_bg--hover: $white;
+$back-to-top_bg--hover: $orange-dark;
+$back-to-top_color--hover: $white;
 
 $back-to-top_height: $grid-gutter-width * 1.5;
 $back-to-top_width: $back-to-top_height;
@@ -13,6 +14,10 @@ $back-to-top_borderrad: 50%;
 
 
 .back-to-top {
+
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  text-decoration: none !important;
+  font-size: 1.2em;
   position: fixed;
   right: $grid-gutter-width / 2;
   bottom: $grid-gutter-width;
@@ -33,7 +38,6 @@ $back-to-top_borderrad: 50%;
   justify-content: center;
   align-items: center;
 
-  transition: $transition;
 
   &.unhide {
     z-index: 0;
@@ -44,6 +48,9 @@ $back-to-top_borderrad: 50%;
     cursor: pointer;
     color: $back-to-top_color--hover;
     background-color: $back-to-top_bg--hover;
+  }
+  &:active {
+    box-shadow: none;
   }
 }
 
