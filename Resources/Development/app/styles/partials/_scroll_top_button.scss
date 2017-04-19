@@ -1,0 +1,56 @@
+// Vars
+$back-to-top_bg: $color-button-bg;
+$back-to-top_color: $color-button;
+$back-to-top_bg--hover: $color-button-bg;
+$back-to-top_color--hover: $color-button-hover;
+
+$back-to-top_height: $grid-gutter-width * 1.5;
+$back-to-top_width: $back-to-top_height;
+
+$back-to-top_borderrad: 50%;
+
+
+
+
+.back-to-top {
+  position: fixed;
+  right: $grid-gutter-width / 2;
+  bottom: $grid-gutter-width;
+
+  opacity: 0;
+  z-index: -12;
+
+  background: $back-to-top_bg;
+  color: $back-to-top_color;
+
+  height: $back-to-top_height;
+  width: $back-to-top_width;
+
+  border-radius: $back-to-top_borderrad;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: $transition;
+
+  &.unhide {
+    z-index: 0;
+    opacity: 1;
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: $back-to-top_color--hover;
+    background-color: $back-to-top_bg--hover;
+  }
+}
+
+// Positioning of arrow
+.back-to-top {
+  i {
+    position: relative;
+    top: -2px;
+  }
+}
