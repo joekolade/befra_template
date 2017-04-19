@@ -1,9 +1,12 @@
 //
 // Content
 //
-h1,h2,h3 {
+h1, h2, h3 {
   line-height: 1.2;
   font-weight: 400;
+
+  margin-top: 1.825em;
+  margin-bottom: 1.2em;
 
   small {
     color: inherit;
@@ -14,10 +17,15 @@ h1,h2,h3 {
     font-weight: 400;
   }
 
-  div[class*=col-] > :first-child > &{
+  div[class*=col-] > :first-child > & {
     margin-top: 0;
   }
 
+}
+
+h4, h5, h6 {
+  margin-top: 1.825em;
+  margin-bottom: 1.2em;
 }
 
 a {
@@ -62,6 +70,7 @@ a {
 b, strong {
   font-weight: 600;
 }
+
 .align {
   &-left {
     text-align: left;
@@ -91,7 +100,7 @@ b, strong {
     .ce-gallery {
       float: none;
     }
-    h1,h2,h3,h4,p,ul,ol {
+    h1, h2, h3, h4, p, ul, ol {
       margin-left: $grid-gutter-width/2;
       margin-right: $grid-gutter-width/2;
     }
@@ -107,8 +116,21 @@ b, strong {
       }
     }
   }
-}
 
+  p.special {
+    margin: 0 -.3em 0.3em;
+    padding: 0.1em .3em 0.2em;
+    background: #f4f4f0;
+    border-radius: 6px;
+
+    &:last-of-type {
+      margin-top: 0.8em;
+    }
+    & + p:not(.special) {
+      margin-top: 0.8em;
+    }
+  }
+}
 
 // rounded images
 //

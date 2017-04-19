@@ -222,6 +222,7 @@
   background: $orange;
   margin: 0;
   padding: .75em;
+  margin-right: -$grid-gutter-width/2;
   .icon-bar {
     background-color: black;
     border-radius: 2px;
@@ -229,6 +230,12 @@
 
   &:active .icon-bar {
     background-color: white;
+  }
+}
+
+@media screen and (min-width: $screen-sm-min) {
+  .navbar .navbar-toggle {
+    margin-right: 0;
   }
 }
 
