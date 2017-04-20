@@ -79,6 +79,7 @@ page.includeJSFooter {
 *
 */
 page.10.variables {
+
     layout = TEXT
     layout.data = levelfield:-2,backend_layout_next_level,slide
     layout.override.field = backend_layout
@@ -89,14 +90,8 @@ page.10.variables {
     sitename = TEXT
     sitename.value = {$befra_template.site.name}
 
-    claim = TEXT
-    claim.value = {$befra_template.site.claim}
-
     pageIds_root = TEXT
     pageIds_root.value = {$befra_template.pageIds.root}
-
-    fetscherLogoFile = TEXT
-    fetscherLogoFile.value = {$befra_template.site.fetscherLogoFile}
 
     mainNavi = HMENU
     mainNavi {
@@ -125,6 +120,7 @@ page.10.variables {
         20 {
             special = directory
             special.value = {$befra_template.pageIds.metaNaviRoot}
+            special.insertData = 1
 
             1 = TMENU
             1.NO = 1
