@@ -113,21 +113,21 @@ mod.web_layout.BackendLayouts {
                                 name = Footer links
                                 colPos = 31
                                 allowed = text,textmedia
-                                allowedGridType = undefined
+                                #allowedGridType = undefined
                             }
 
                             2 {
                                 name = Footer mitte
                                 colPos = 32
                                 allowed = text,textmedia
-                                allowedGridType = undefined
+                                #allowedGridType = undefined
                             }
 
                             3 {
                                 name = Footer rechts
                                 colPos = 33
                                 allowed = text,textmedia
-                                allowedGridType = undefined
+                                #allowedGridType = undefined
                             }
                         }
                     }
@@ -139,7 +139,7 @@ mod.web_layout.BackendLayouts {
                                 colspan = 3
                                 colPos = 41
                                 allowed = list
-                                allowedGridType = undefined
+                                #allowedGridType = undefined
                             }
                         }
                     }
@@ -161,7 +161,7 @@ mod.web_layout.BackendLayouts {
                                 name = Inhalt
                                 colPos = 21
                                 allowed = undefined
-                                allowedGridType = undefined
+                                #allowedGridType = undefined
                             }
                         }
                     }

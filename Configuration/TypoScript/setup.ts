@@ -79,7 +79,6 @@ page.includeJSFooter {
 *
 */
 page.10.variables {
-
     layout = TEXT
     layout.data = levelfield:-2,backend_layout_next_level,slide
     layout.override.field = backend_layout
@@ -162,7 +161,7 @@ page.10.variables {
         10 {
             select.where = colPos = 31
             select.languageField = sys_language_uid
-            wrap = <div class="col-sm-3">|</div>
+            wrap = <div class="col-sm-4">|</div>
             slide = -1
         }
 
@@ -171,7 +170,6 @@ page.10.variables {
 
         30 < .10
         30.select.where = colPos = 33
-
     }
 }
 
