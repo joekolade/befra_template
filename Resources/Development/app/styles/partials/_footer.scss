@@ -3,8 +3,18 @@
 //
 footer {
   background: $footer-bg-color;
-  padding-top: 40px;
-  padding-bottom: $grid-gutter-width/2;
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  @include textcolor($footer-color);
+
+  h2 {
+    font-size: $font-size-h1;
+  }
+
+  ul {
+    margin: 1.5em 0;
+  }
 
 }
 
@@ -25,7 +35,7 @@ body {
     position: relative;
     z-index: 2;
     background: white;
-    min-width: 100%;
+    //min-width: 100%;
 
     > .container {
       max-width: $wrapper-max-width;
@@ -38,17 +48,21 @@ body {
 
 .superfooter {
   padding: 0;
-  background: $superfooter-bg-color;
+  background: none;
   color: $superfooter-color;
 
-  border: solid white;
-  border-width: 1px 0;
+  border: none;
 
   // Fixed behind content
   position: fixed;
   bottom: 0;
   height: 236px;
+  max-width: 100%;
   width: 100%;
+  .embed-responsive {
+    max-width: $wrapper-max-width;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: $screen-sm-min) {

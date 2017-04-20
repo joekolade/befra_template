@@ -1,9 +1,10 @@
-@import 'https://fonts.googleapis.com/css?family=Signika:300,600';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,700';
 
-$font-family-base: 'Signika', sans-serif;
+$font-family-base: 'Open Sans', sans-serif;
 
 // Define font weight
-$headings-font-weight: 600;
+$headings-font-weight: 300;
+$font-weight-bold: 700;
 body {
   font-weight: 300;
 }

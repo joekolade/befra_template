@@ -1,10 +1,11 @@
-//
-// Variables for Fetscher Projekt
+
+// Variables for Befra Projekt
 //
 
 $wrapper-max-width: 1200px;
 $header-bg: #e8e8e8;
-$border-radius-base: 0;
+$border-radius-base: 0px;
+$border-radius-images: 8px;
 
 $default-transition-property: all;
 $default-transition-duration: 0.3s;
@@ -12,29 +13,38 @@ $default-transition-ease: linear;
 
 $default-transition: $default-transition-property $default-transition-duration $default-transition-ease;
 
+
 //
 // Font-size
-//
+
 $font-size-base:          15px;
 // $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~19px
 // $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~13px
 
 $font-size-h1:            floor(($font-size-base * 2)); // ~30px
-$font-size-h2:            floor(($font-size-base * 1.6666666667)); // ~25px
-$font-size-h3:            ceil(($font-size-base * 1.33333)); // ~20px
+$font-size-h2:            floor(($font-size-base * 1.4666666667)); // ~22px
+$font-size-h3:            ceil(($font-size-base * 1.233333)); // ~19px
 // $font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
 // $font-size-h5:            $font-size-base !default;
 // $font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
 
-//
+$line-height-base:        1.428571429;
+$line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
+$padding-base-vertical: 6px !default;
+
 // Colors
 //
-$orange: #ff7d00;
+
+$white: #ffffff;
+$black: #000000;
+
+$orange: #f37d00;
 $orange-dark: #e97100;
 $grey: #b6b6b6;
-$grey-dark: #333333;
-$grey-special: #4d4d4d;
-$grey-middle: #878787;
+$gray-dark: #333333;
+$gray-special: #4d4d4d;
+$gray-middle: #878787;
+$gray-light: #f0f1ef;
 $blue: #00a5e9;
 $blue-light: #dbeefb;
 $blue-dark: #c2cdd5;
@@ -42,57 +52,112 @@ $blue-dark: #c2cdd5;
 $brand-warning: $orange;
 
 $link-hover-decoration: underline;
-$link-color: $grey-dark;
+$link-color: $gray-dark;
 
+// Header
 //
+
+$header-offset: 2rem;
+
 // Langmenu
 //
+
 $flag-opacity: 0.4;
 $flag-border: thin solid white;
 
-$meta-menu-color: $grey-middle;
-$home-icon-width: 40px;
+$meta-menu-color: $gray-middle;
+$home-icon-width: 30px;
 $home-icon-border: 1px solid $meta-menu-color;
 
-//
 // Navbar
 //
+
 $navbar-height: 45px;
 $navbar-margin-bottom: 0;
 $navbar-default-color: white;
 $navbar-default-bg: $orange;
 $navbar-default-border: white;
+
+$navbar-breakpoint: 992px;
+
 // Navbar links
+//
+
 $navbar-default-link-color: white;
 $navbar-default-link-hover-color: white;
 $navbar-default-link-hover-bg: $orange-dark;
 $navbar-default-link-active-color: white;
 $navbar-default-link-active-bg: $orange-dark;
 
+$navbar-sub-default-bg: $white;
+$navbar-sub-default-link-color: $gray-dark;
+$navbar-sub-default-link-hover-color: white;
+$navbar-sub-default-link-hover-bg: $orange;
+$navbar-sub-default-link-active-color: white;
+$navbar-sub-default-link-active-bg: $orange;
+
 // Navbar toggle
+//
+
 $navbar-default-toggle-hover-bg:           $orange;
 $navbar-default-toggle-icon-bar-bg:        white;
 $navbar-default-toggle-border-color:       none;
 
 $item-min-width: 160px;
 
-//
 // Stage
 //
-$stage-bg-color: $grey;
+
+$stage-bg-color: white;
 $stage-sm-bottom: 70px;
+$stage-caption-bg: rgba(0, 0, 0, 0.6);
 
-//
-// Quick form
-//
-$quickform-width: 352px;
-$quickform-toggle-height: 45px;
-
-//
 // Footer
 //
 // $footer-color: $text-color;
-$footer-bg-color: $blue-light;
+
+$footer-bg-color: $orange;
+$footer-color: $white;
 
 $superfooter-color: white;
 $superfooter-bg-color: $blue-dark;
+
+// Special Box
+//
+
+$specialbox-bg-color: $black;
+
+
+// Forms
+//
+
+$input-bg: $white;
+$input-color: $gray-dark;
+$input-border: transparent;
+
+$input-border-focus:             $orange;
+$input-color-placeholder:        $gray-dark;
+
+$input-height-base:              ($line-height-computed + ($padding-base-vertical * 1) + 2);
+
+//** `.form-group` margin
+$form-group-margin-bottom:       .5em;
+
+$legend-color:                   $gray-dark !default;
+$legend-border-color:            #e5e5e5 !default;
+
+//** Border color for textual input addons
+$input-group-addon-border-color: $input-border !default;
+
+//** Disabled cursor for form controls and buttons.
+$cursor-disabled:                not-allowed !default;
+
+// Breadcrumb
+//
+
+//$breadcrumb-padding-vertical:   8px !default;
+$breadcrumb-padding-horizontal: 0;
+$breadcrumb-bg: $white;
+$breadcrumb-color: #868686;
+$breadcrumb-active-color: $gray-dark;
+$breadcrumb-separator: '|';

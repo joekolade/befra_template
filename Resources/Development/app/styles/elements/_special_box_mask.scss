@@ -1,0 +1,52 @@
+.specialBox {
+  background: $specialbox-bg-color;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include textcolor($white);
+
+  div[class^="col-"] {
+    width: 100%;
+
+    &:first-child {
+      min-height: 275px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    &:last-child {
+
+      padding: $grid-gutter-width;
+      min-height: 280px;
+
+      > h1,h2,h3,h4 {
+        font-weight: bold;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  form {
+    label {
+      display: none;
+    }
+    .checkbox label {
+      display: block;
+    }
+    input[type=submit],
+    button[type=submit] {
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  @media screen and (min-width: $screen-sm-min) {
+    div[class^="col-"] {
+      width: 50%;
+    }
+  }
+
+}

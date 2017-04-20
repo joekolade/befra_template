@@ -1,0 +1,115 @@
+
+// Header styles
+//
+
+header.container {
+  min-height: 82px;
+  background-color: $header-bg;
+  position: relative;
+
+  .logoWrap {
+    margin: 41px 15px 21px;
+    margin-top: $header-offset;
+    max-width: 50%;
+
+    .logo {
+      img,
+      svg {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+
+  /* Responsive: Portrait tablets and up */
+  @media screen and (min-width: 768px) {
+
+    min-height: 172px;
+
+    .logoWrap {
+      margin-left: 82px;
+      margin-top: 69px;
+      max-width: 385px;
+    }
+    .logo img,
+    .logo svg,
+    .logo {
+      float: left;
+      margin-right: 25px;
+      width: 385px;
+    }
+  }
+
+  @media screen and (min-width: 450px) {
+  }
+
+}
+
+
+// Meta navigation oben im header
+//
+
+.metaNavi {
+  text-align: right;
+  font-size: $font-size-small;
+  margin-bottom: 21px;
+
+  margin-right: -$grid-gutter-width/2;
+  margin-left: -$grid-gutter-width/2;
+
+  @include textcolor($gray-dark);
+
+  a {
+    text-decoration: none;
+  }
+
+  nav.lang {
+    ul {
+      margin-bottom: 1rem;
+    }
+    li {
+      min-width: 0;
+      opacity: $flag-opacity;
+      transition: $default-transition;
+
+      &:hover,
+      &.active {
+        opacity: 1;
+      }
+
+      img {
+        border: $flag-border;
+      }
+      a {
+        margin-left: 3em;
+      }
+    }
+  }
+
+  nav.meta {
+    display: flex;
+    text-align: left;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    a {
+      margin-right: $grid-gutter-width/2;
+      font-weight: bold;
+    }
+    span a {
+      line-height: 1.8;
+    }
+  }
+
+  /* Responsive: MINI | < 320 */
+  @media screen and (max-width: 320px) {
+
+  }
+
+  /* Responsive: Portrait tablets and up */
+  @media screen and (min-width: 768px) {
+    margin-top: -2rem;
+    margin-right: 82px;
+  }
+}

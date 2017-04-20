@@ -12,7 +12,9 @@ $fa-font-path: "../fonts";
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/slick-carousel/slick/slick.scss";
 @import "bower_components/font-awesome/scss/font-awesome.scss";
+@import "bower_components/select2/src/scss/core.scss";
 // endbower
 
 .browserupgrade {
@@ -30,12 +32,23 @@ $fa-font-path: "../fonts";
 
 body {
   padding-bottom: 80px;
-  background: #B3B3B3 url(../Images/BG_SB.png) center repeat;
+  //background: #B3B3B3 url(../Images/BG_SB.png) center repeat;
+  background: #8c8c8c;
 
   .wrapper {
     background: white;
     margin: 0 auto;
-    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.5)
+    //box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  > .container {
+    z-index: 4;
+    width: 100%;
+
+    .center {
+      margin: 0 auto;
+      max-width: $wrapper-max-width;
+    }
   }
 
   /* Responsive: Portrait tablets and up */
@@ -59,31 +72,30 @@ body {
 
 
 
-// Images
-@import "elements/responsive_images";
 
-// Fetch header styles
-@import "elements/header";
 
-// Fetch navigation styles
-@import "elements/navigation";
+// Partials
 
-// Fetch stage styles
-@import "elements/stage";
-
-// Fetch quickform styles
-@import "elements/quickform";
+@import "partials/header";
+@import "partials/navigation";
+@import "partials/stage";
+@import "partials/breadcrumb";
+@import "partials/btn-special";
 @import "partials/footer";
+@import "partials/btn-special";
+@import "partials/scroll_top_button";
 
-// Fetch form styles
+// Elements
+
+@import "elements/responsive_images";
 @import "elements/forms";
-
-// Fetch content styles
 @import "elements/content";
-
-
-// Spacer Element (Mask)
 @import "elements/spacer_mask";
+@import "elements/special_box_mask";
+@import "elements/selectormadness";
 
-// EXT:cookieconsent2
+
+
+// Extensions
+
 @import "extensions/cookieconsent2";

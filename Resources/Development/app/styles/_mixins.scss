@@ -2,3 +2,14 @@
 @mixin transit($property: all, $duration: 0.3s, $ease: linear){
   transition: $property $duration $ease;
 }
+
+@mixin textcolor($col: white){
+  color: $col;
+
+  a {
+    color: $col;
+    &:hover {
+      color: darken($col, 20%);
+    }
+  }
+}
