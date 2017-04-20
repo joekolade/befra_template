@@ -120,11 +120,19 @@ page.10.variables {
         20 {
             special = directory
             special.value = {$befra_template.pageIds.metaNaviRoot}
-            special.insertData = 1
+            special.value = 9
+
+            wrap = <ul class="list-inline">|</ul>
 
             1 = TMENU
             1.NO = 1
             1.NO.ATagParams = class="btn"
+            1.wrap = <li>|</li>
+
+            1.ACT < .1.NO
+            1.ACT.wrap = <li class="active">|</li>
+
+            1.CUR < .1.ACT
         }
     }
 
