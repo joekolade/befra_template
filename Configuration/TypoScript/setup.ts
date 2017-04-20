@@ -152,7 +152,7 @@ page.10.variables {
 
     contentMain =< styles.content.get
     contentMain {
-        select.where = colPos = 12
+        select.where = colPos = 21
         select.languageField = sys_language_uid
     }
 
@@ -160,91 +160,26 @@ page.10.variables {
     contentFooter {
         10 < styles.content.get
         10 {
-            select.where = colPos = 21
+            select.where = colPos = 31
             select.languageField = sys_language_uid
             wrap = <div class="col-sm-3">|</div>
             slide = -1
         }
 
         20 < .10
-        20.select.where = colPos = 22
+        20.select.where = colPos = 32
 
         30 < .10
-        30.select.where = colPos = 23
+        30.select.where = colPos = 33
 
-        40 < .10
-        40.select.where = colPos = 24
     }
 }
 
-lib.superFooterText = COA
-lib.superFooterText {
-    10 = CONTENT
-    10 {
-        table = pages
-        select {
-            pidInList = 0
-            uidInList = 1
-        }
-
-        renderObj = COA
-        renderObj {
-            10 = TEXT
-            10 {
-                field = tx_mask_agencyfootertext
-                parseFunc =< lib.parseFunc_RTE
-            }
-        }
-    }
-}
-
-lib.superFooterLogo < lib.superFooterText
-lib.superFooterLogo {
-    10.renderObj {
-        10 >
-        10 = FILES
-        10 {
-            references {
-                table = pages
-                fieldName = tx_mask_agencylogo
-                uid.data = uid
-            }
-
-            renderObj = IMAGE
-            renderObj {
-                file.import.data = file:current:originalUid // file:current:uid
-                altText.field = tx_mask_agencyname
-                titleText.field = tx_mask_agencyname
-
-                stdWrap.typolink.parameter.field = tx_mask_agencyhomepage
-                stdWrap.typolink.extTarget = _blank
-            }
-        }
-    }
-}
-
-lib.quickform = COA
-lib.quickform {
-    wrap = <div class="quick"><div class="quickInner">|</div></div>
-
-    10 = TEXT
-    10 {
-        wrap = <a class="btn btn-primary" role="button" data-toggle="collapse" href="#quickFormCollapse" aria-expanded="false" aria-controls="collapseExample">| <i class="fa fa-chevron-down pull-right"></i></a>
-        value = {$befra_template.text.quickform.toggle}
-    }
-
-    20 = CONTENT
-    20 {
-        table = tt_content
-        select {
-            pidInList = 22
-            #{$site.pageIds.quickform}
-            uidInList = 33
-            #.data = {$site.quickformUid}
-        }
-
-        wrap = <div class="ollapse collapse" id="quickFormCollapse" aria-expanded="true">|<div class="footer"><a href="tel:+49735194090"><i class="fa fa-phone"></i> +49 (0)7351 9409-0</a></div></div>
-    }
+lib.superFooter < content.styles.get
+lib.superFooter {
+    select.where = colPos = 21
+    select.languageField = sys_language_uid
+    slide = -1
 }
 
 /**
