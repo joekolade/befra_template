@@ -121,19 +121,10 @@ page.10.variables {
 
   metaNavi = COA
   metaNavi  {
-    10 = TEXT
-    10 {
-      typolink.parameter = {$befra_template.pageIds.root}
-      typolink.ATagParams = class="btn hidden-xs"
-      typolink.ATagBeforeWrap = 1
-      typolink.wrap = <i class="fa fa-home"></i><span class="sr-only">|</span>
-    }
-
     20 = HMENU
     20 {
       special = directory
       special.value = {$befra_template.pageIds.metaNaviRoot}
-      special.value = 7
 
       1 = TMENU
       1.NO = 1

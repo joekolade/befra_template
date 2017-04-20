@@ -34,7 +34,7 @@ befra_template {
 
     pageIds {
         root = 1
-        metaNaviRoot = 7
+        metaNaviRoot = 9
 
         quickform = 22
         contact = 6
