@@ -1,12 +1,30 @@
-<div class="logoWrap">
-  <div class="logo">
-    <f:link.page pageUid="{pageIds_root}">
-      {logoFile -> f:format.raw()}
-    </f:link.page>
-  </div>
-  <f:if condition="{claim}">
-    <div class="claim">
-      {claim -> f:format.raw()}
+<div class="center">
+    <div class="logoWrap">
+        <div class="logo">
+            <f:link.page pageUid="{pageIds_root}">
+                {logoFile -> f:format.raw()}
+            </f:link.page>
+        </div>
     </div>
-  </f:if>
+
+    <div class="metaNavi hidden-xs">
+        <!-- Language de/en/fr -->
+        <nav class="lang">
+            {metaNavi -> f:format.raw()}
+        </nav>
+        <!--
+            Metamenu
+            TODO: noch dymnamisieren
+        -->
+        <nav class="meta">
+            <a class="btn btn-special" href="tel:00497561912482">
+                <i class="fa fa-phone"></i>
+                <span class="sr-only">Telefon</span>
+            </a>
+            <span>
+                <a href="tel:00497561912482">+49 (0) 7561 91248-2</a><br>
+                <a href="mailto:info@befra-energietechnik.de">info@befra-energietechnik.de</a>
+            </span>
+        </nav>
+    </div>
 </div>

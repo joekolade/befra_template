@@ -1,13 +1,132 @@
 <f:layout name="Default" />
 
+
 <f:section name="stage">
 
- {contentStage -> f:format.raw()}
+    {contentStage -> f:format.raw()}
 
 </f:section>
 
 <f:section name="main">
+    <!-- Content starts here -->
 
-  {contentMain -> f:format.raw()}
+
+    <f:if condition="{layout} == 1">
+        tbd
+    </f:if>
+    {contentMain -> f:format.raw()}
+
+
+    <div class="container content">
+
+
+        <h1>Verkauf und Vermietung von Trafostationen</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetuer sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consectetuer sadipscing elitr,
+            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+        </p>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="images/mobile-trafostation.jpg" alt="" class="img-responsive">
+                <h3>mobile <b>Trafostationen</b></h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna
+                    <a href="#">weiterlesen</a>
+                </p>
+            </div>
+            <div class="col-sm-3">
+                <img src="images/mobile-trafostation.jpg" alt="" class="img-responsive">
+                <h3>mobiler <b>Mast</b></h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua.
+                    <a href="#">weiterlesen</a>
+                </p>
+            </div>
+            <div class="col-sm-3">
+                <img src="images/mobile-trafostation.jpg" alt="" class="img-responsive">
+                <h3>stationäre <b>Trafostationen</b></h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna <a href="#">weiterlesen</a>
+                </p>
+            </div>
+            <div class="col-sm-3">
+                <img src="images/mobile-trafostation.jpg" alt="" class="img-responsive">
+                <h3>Lager <b>Transformatoren</b></h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna <a href="#">weiterlesen</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="specialBox row">
+            <div class="col-sm-6" style="background-image: url('images/mobile-trafostation-02.jpg');"></div>
+            <div class="col-sm-6">
+                <h3>Bedarfermittlung/Anfrage</h3>
+                <p>Senden Sie uns die Eckdaten der von Ihnen benötigten Trafostation.
+                    Wir werden uns umgehend mit Ihnen in Verbindung sezten.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleStandort">Standort der Trafostation</label>
+                        <input type="email" class="form-control" id="exampleStandort"
+                               placeholder="Standort der Trafostation">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleLeistung">Leistung in kVA</label>
+                        <input type="password" class="form-control" id="exampleLeistung" placeholder="Leistung in kVA">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleSpannung">Spannung (Niederspannung, Mittelspannung)</label>
+                        <input type="password" class="form-control" id="exampleSpannung"
+                               placeholder="Spannung (Niederspannung, Mittelspannung)">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleName">Name, Firma</label>
+                        <input type="password" class="form-control" id="exampleName" placeholder="Name, Firma">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleAdresse">Adresse</label>
+                        <input type="password" class="form-control" id="exampleAdresse" placeholder="Adresse">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleTelefon">Telefon</label>
+                        <input type="password" class="form-control" id="exampleTelefon" placeholder="Telefon">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleEmail">E-Mail</label>
+                        <input type="password" class="form-control" id="exampleEmail" placeholder="E-Mail">
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> <a href="/" target="_blank">Datenschutz</a> und Trallala
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-warning">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <p>Lorem ipsum dolor sit amet, consectetuer sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consectetuer
+                    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                    sed diam voluptua.</p>
+            </div>
+            <div class="col-sm-6">
+                <p>Lorem ipsum dolor sit amet, consectetuer sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consectetuer
+                    sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                    sed diam voluptua.</p>
+            </div>
+        </div>
+
+
+    </div>
 
 </f:section>

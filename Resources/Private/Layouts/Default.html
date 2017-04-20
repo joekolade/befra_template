@@ -1,45 +1,24 @@
-<div class="wrapper">
-  <header class="container">
+<!--[if lt IE 10]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
 
+<header class="container">
     <f:render partial="Header" arguments="{_all}"></f:render>
+</header>
 
-  </header>
+<f:render partial="Navigation" arguments="{_all}"></f:render>
 
-  <f:render partial="Navigation" arguments="{_all}"></f:render>
+<div class="wrapper">
+    <div class="container stage">
+        <f:render section="stage"/>
+    </div>
 
-  <div class="container stage">
+    <f:render section="main"/>
 
-    <f:render section="stage" />
-
-  </div>
-
-  <f:if condition="{layout} == 1">
-    <f:if condition="{data.tx_mask_quickform_show} == 1">
-      <f:cObject typoscriptObjectPath="lib.quickform"></f:cObject>
-    </f:if>
-  </f:if>
-
-  <div class="container content">
-
-    <f:render section="main" />
-
-  </div>
-
-  <footer class="container">
 
     <f:render partial="Footer" arguments="{_all}"></f:render>
 
-  </footer>
-
-  <!-- Metamenu -->
-  <nav class="meta">
-    {metaNaviFooter -> f:format.raw()}
-  </nav>
-
-  <footer class="container superfooter">
-
     <f:render partial="SuperFooter" arguments="{_all}"></f:render>
-
-  </footer>
 
 </div>

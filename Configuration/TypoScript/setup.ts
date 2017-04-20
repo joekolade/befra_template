@@ -81,8 +81,8 @@ page.10.variables {
   layout.data = levelfield:-2,backend_layout_next_level,slide
   layout.override.field = backend_layout
 
-  logoFile = TEXT
-  logoFile.value = {$befra_template.site.logoFile}
+  logoFile = FILE
+  logoFile.file = {$befra_template.site.logoFile}
 
   sitename = TEXT
   sitename.value = {$befra_template.site.name}
