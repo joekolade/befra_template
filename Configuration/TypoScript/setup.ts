@@ -175,9 +175,9 @@ page.10.variables {
     }
 }
 
-lib.superFooter < content.styles.get
+lib.superFooter < styles.content.get
 lib.superFooter {
-    select.where = colPos = 21
+    select.where = colPos = 41
     select.languageField = sys_language_uid
     slide = -1
 }
