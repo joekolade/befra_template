@@ -126,7 +126,7 @@ page.10.variables {
 
             1 = TMENU
             1.NO = 1
-            1.NO.ATagParams = class="btn"
+            #1.NO.ATagParams = class="btn"
             1.wrap = <li>|</li>
 
             1.ACT < .1.NO
