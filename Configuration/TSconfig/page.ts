@@ -76,7 +76,7 @@ RTE.colors {
 
 mod.web_layout.BackendLayouts {
     1 {
-        title = Startsete
+        title = Startseite
         #icon = EXT:example_extension/Resources/Public/Images/BackendLayouts/default.gif
         config {
             backend_layout {
