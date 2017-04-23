@@ -1,6 +1,14 @@
 <footer class="container">
     <h2>Kontakt</h2>
     <div class="row">
-        {contentFooter -> f:format.raw()}
+        <div class="col-sm-4">
+            {contentFooterLeft -> f:format.raw()}
+        </div>
+        <div class="col-sm-4">
+            {contentFooterMiddle -> f:format.raw()}
+        </div>
+        <div class="col-sm-4">
+            {contentFooterRight -> f:format.raw()}
+        </div>
     </div>
 </footer>

@@ -20,7 +20,7 @@ TCEFORM.tt_content.imagecols {
 TCAdefaults.tt_content.imagecols = 1
 
 # add pastetoggle button to RTE toolbar
-RTE.default.showButtons := addToList (pastetoggle,left,right,center)
+RTE.default.showButtons := addToList(pastetoggle,left,right,center)
 RTE.default.buttons.pastetoggle.setActiveOnRteOpen = 1
 
 RTE.default {
@@ -89,8 +89,8 @@ mod.web_layout.BackendLayouts {
                                 name = Stage
                                 colspan = 3
                                 colPos = 11
-                                allowed = undefined
-                                allowedGridType = undefined
+                                allowed = *
+                                allowedGridType = *
                             }
                         }
                     }
@@ -101,8 +101,8 @@ mod.web_layout.BackendLayouts {
                                 name = Inhalt
                                 colspan = 3
                                 colPos = 21
-                                allowed = undefined
-                                allowedGridType = undefined
+                                allowed = *
+                                allowedGridType = *
                             }
                         }
                     }
@@ -111,23 +111,23 @@ mod.web_layout.BackendLayouts {
                         columns {
                             1 {
                                 name = Footer links
-                                colPos = 31
-                                allowed = text,textmedia
-                                #allowedGridType = undefined
+                                colPos = 51
+                                allowed = *
+                                allowedGridType = *
                             }
 
                             2 {
                                 name = Footer mitte
-                                colPos = 32
-                                allowed = text,textmedia
-                                #allowedGridType = undefined
+                                colPos = 52
+                                allowed = *
+                                allowedGridType = *
                             }
 
                             3 {
                                 name = Footer rechts
-                                colPos = 33
-                                allowed = text,textmedia
-                                #allowedGridType = undefined
+                                colPos = 53
+                                allowed = *
+                                allowedGridType = *
                             }
                         }
                     }
@@ -139,7 +139,7 @@ mod.web_layout.BackendLayouts {
                                 colspan = 3
                                 colPos = 41
                                 allowed = list
-                                #allowedGridType = undefined
+                                allowedGridType = *
                             }
                         }
                     }
@@ -160,8 +160,8 @@ mod.web_layout.BackendLayouts {
                             1 {
                                 name = Inhalt
                                 colPos = 21
-                                allowed = undefined
-                                #allowedGridType = undefined
+                                allowed = *
+                                allowedGridType = *
                             }
                         }
                     }

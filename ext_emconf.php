@@ -25,33 +25,33 @@ $EM_CONF[$_EXTKEY] = array(
 	'constraints' => array(
 		'depends' => array(
 			'typo3' => '8.7.0-8.99.99',
-			'fsc_layout_wrap' => '',
-			'bootstrap_grids' => '',
-			'gridelements' => '',
-			'mask' => '',
-			'powermail' => '',
-			'realurl' => '',
-			'dd_googlesitemap' => '',
-			'jh_magnificpopup' => '',
-			't3monitoring_client' => '',
-			'cs_seo' => '',
-			'sourceopt' => '',
-			'scriptmerger' => '',
+//			'gridelements' => '',
+//			'bootstrap_grids' => '',
+//			'mask' => '',
+//			'powermail' => '',
+//			'realurl' => '',
+//			'dd_googlesitemap' => '',
+//			'jh_magnificpopup' => '',
+//			't3monitoring_client' => '',
+//			'cs_seo' => '',
+//			'sourceopt' => '',
+//			'scriptmerger' => '',
+
 			// Sysextensions
 			'opendocs' => '',
 			'recycler' => '',
-			'vhs' => '',
 		),
 		'conflicts' => array(
 		),
 		'suggests' => array(
+            'fluid-styled-responsive-images' => '',
 			'rx_unrollsavebuttons' => '',
 			'go_maps_ext' => '',
 			'fsc_layout_wrap' => '',
 			'frontend_editing' => '',
 			'lib_js_lazysizes' => '', // https://github.com/joekolade/lib_js_lazysizes
-			'cookieconsent2' => '',
-			'fluid-styled-responsive-images' => ''
+			'cookieconsent2' => ''
+//			'vhs' => '',
 		),
 	),
 );

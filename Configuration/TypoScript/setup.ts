@@ -1,38 +1,4 @@
-/**
-* TS Includes
-*/
-
-// FSC
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/Static/setup.txt">
-// FSC LAyout wrap
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/Styling/setup.txt">
-// Gridelements
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:gridelements/Configuration/TypoScript/setup.ts">
-// bootstrap_grids
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_grids/Configuration/TypoScript/setup.txt">
-// powermail
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:powermail/Configuration/TypoScript/Main/setup.txt">
-// powermail bootstrap
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:powermail/Configuration/TypoScript/BootstrapClassesAndLayout/setup.txt">
-// cs_seo
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:cs_seo/Configuration/TypoScript/setup.txt">
-// jh_magnifiq
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:jh_magnificpopup/Configuration/TypoScript/Default/setup.txt">
-// mask
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:mask/Configuration/TypoScript/setup.txt">
-// scriptmerger
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:scriptmerger/Configuration/setup.txt">
-// sourceopt
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:sourceopt/Configuration/TypoScript/setup.txt">
-// go_maps_ext
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:go_maps_ext/Configuration/TypoScript/setup.txt">
-// frontend_editing
-#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:frontend_editing/Configuration/TypoScript/setup.ts">
-
-/**
-* Template
-*
-*/
+# Template
 
 page = PAGE
 page.10 = FLUIDTEMPLATE
@@ -53,24 +19,31 @@ page.10 {
 
 config.baseURL = http://{$befra_template.site.domain}/
 config.tx_realurl_enable = 1
-config.tx_frontend_editing = 1
+config.tx_frontend_editing = 0
 
-/**
-* Sytles & Scripts
-*
-*/
+#
+# Styles & Scripts
+
 page.includeCSS {
     main = EXT:befra_template/Resources/Public/Css/main.css
 }
 
 page.includeJS.modernizr = EXT:befra_template/Resources/Public/JavaScripts/vendor/modernizr.js
-page.includeJS {
-    vendor = EXT:befra_template/Resources/Public/JavaScripts/vendor.js
-}
+page.includeJS.vendor = EXT:befra_template/Resources/Public/JavaScripts/vendor.js
 
 page.includeJSFooter {
     plugins = EXT:befra_template/Resources/Public/JavaScripts/plugins.js
     main = EXT:befra_template/Resources/Public/JavaScripts/main.js
+}
+
+#
+# Fix missing lib.content.get
+lib.content_get < styles.content.get
+lib.content_get {
+    select {
+        languageField = sys_language_uid
+        where = colPos=0
+    }
 }
 
 /**
@@ -142,38 +115,40 @@ page.10.variables {
 
     contentStage = COA
     contentStage {
-        10 < styles.content.get
+        10 < lib.content_get
         10 {
             select.where = colPos = 11
             select.languageField = sys_language_uid
+            slide = -1
         }
     }
 
-    contentMain =< styles.content.get
+    contentMain < lib.content_get
     contentMain {
         select.where = colPos = 21
         select.languageField = sys_language_uid
     }
 
-    contentFooter = COA
-    contentFooter {
-        10 < styles.content.get
-        10 {
-            select.where = colPos = 31
-            select.languageField = sys_language_uid
-            wrap = <div class="col-sm-4">|</div>
-            slide = -1
-        }
+    contentFooterLeft < lib.content_get
+    contentFooterLeft {
+        select.where = colPos=31
+        slide = -1
+    }
 
-        20 < .10
-        20.select.where = colPos = 32
+    contentFooterMiddle < lib.content_get
+    contentFooterMiddle {
+        select.where = colPos=32
+        slide = -1
+    }
 
-        30 < .10
-        30.select.where = colPos = 33
+    contentFooterRight < lib.content_get
+    contentFooterRight {
+        select.where = colPos=33
+        slide = -1
     }
 }
 
-lib.superFooter < styles.content.get
+lib.superFooter < lib.content_get
 lib.superFooter {
     select.where = colPos = 41
     select.languageField = sys_language_uid

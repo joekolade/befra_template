@@ -3,6 +3,5 @@ befra_template {
     language.key = de_DE
 
     text {
-        quickform.toggle = Schnell-Anfrage <span class="closed">öffnen</span><span class="open">schließen</span>
     }
 }
