@@ -81,7 +81,7 @@ JSApp.toTopButton = {
                     var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
                     button.classList.add(_this.options.back_to_top_showclass);
                     if(w > body.offsetWidth)
-                        button.style.right = (w - body.offsetWidth) / 2 + 'px';
+                        button.style.right = (w - body.offsetWidth + 30) / 2 + 'px';
                 }
                 else {
                     button.classList.remove(_this.options.back_to_top_showclass);

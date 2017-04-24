@@ -31,8 +31,10 @@ $(function () {
             offset: {
                 top: $('header.container').first().outerHeight(true),
                 bottom: function () {
-                    return $('footer.container').first().height() + $('footer.superfooter').height() - $menu.height();
+                    return false;
                 }
+                //     return $('footer.container').first().height() + $('footer.superfooter').height() - $menu.height();
+                // }
             }
         });
     }
