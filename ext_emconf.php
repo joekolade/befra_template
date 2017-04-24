@@ -25,17 +25,16 @@ $EM_CONF[$_EXTKEY] = array(
 	'constraints' => array(
 		'depends' => array(
 			'typo3' => '8.7.0-8.99.99',
-//			'gridelements' => '',
-//			'bootstrap_grids' => '',
-//			'mask' => '',
-//			'powermail' => '',
-//			'realurl' => '',
-//			'dd_googlesitemap' => '',
-//			'jh_magnificpopup' => '',
-//			't3monitoring_client' => '',
-//			'cs_seo' => '',
-//			'sourceopt' => '',
-//			'scriptmerger' => '',
+			'gridelements' => '',
+			'bootstrap_grids' => '',
+			'mask' => '',
+			'powermail' => '',
+			'realurl' => '',
+			'dd_googlesitemap' => '',
+			't3monitoring_client' => '',
+			'cs_seo' => '',
+			'sourceopt' => '',
+			'scriptmerger' => '',
 
 			// Sysextensions
 			'opendocs' => '',
@@ -44,6 +43,7 @@ $EM_CONF[$_EXTKEY] = array(
 		'conflicts' => array(
 		),
 		'suggests' => array(
+			'ns_all_lightbox' => '',
             'fluid-styled-responsive-images' => '',
 			'rx_unrollsavebuttons' => '',
 			'go_maps_ext' => '',

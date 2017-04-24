@@ -1,6 +1,6 @@
 befra_template {
     language = de
-    language.key = de_DE
+    languageKey = de_DE
 
     text {
     }

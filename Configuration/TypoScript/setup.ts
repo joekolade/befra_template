@@ -181,7 +181,6 @@ lib {
 *
 */
 lib.stdheader.10.setCurrent.htmlSpecialChars = 0
-#lib.fluidContent.partialRootPaths.100 = fileadmin/Templates/fluid_styled_content/Resources/Private/Partials/
 
 /**
 * Lightbox und Title
