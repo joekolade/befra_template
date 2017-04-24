@@ -34,11 +34,11 @@ editor:
 
     stylesSet:
       # block level styles
-      - { name: "Markierter block", element: "p", attributes: { class: 'text-warning' } }
+      - { name: "Markierter block", element: "p", attributes: { class: 'text-danger' } }
       #- { name: "Quote / Citation", element: "blockquote" }
       #- { name: "Code block", element: "code" }
       # Inline styles
-      - { name: "Markierter block", element: "span", attributes: { class: 'text-warning' } }
+      - { name: "Markierter block", element: "span", attributes: { class: 'text-danger
       #- { name: "Red marker", element: "span", styles: { background-color: "red", color: "white" } }
 
     # Plugin configuration
