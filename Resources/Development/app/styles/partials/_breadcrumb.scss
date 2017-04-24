@@ -17,4 +17,16 @@
     padding: 0 2px;
     font-weight: normal;
   }
+
+  & + .row {
+
+    margin-top: 55px;
+
+    > div > div > header {
+      h1,h2,h3 {
+        margin-top: 0;
+      }
+    }
+  }
 }
+
