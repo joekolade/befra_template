@@ -1,6 +1,19 @@
 <f:if condition="{data.image}">
-<f:for each="{data.image}" as="file">
-  <f:image image="{file}" alt="{file.alternative}" title="{file.title}" class="img-respinsive" width="1170" />
-</f:for>
+    <f:for each="{data.image}" as="file">
+        <div class="slide">
+            <f:image image="{file}" alt="{file.alternative}" class="img-responsive" width="1200"/>
+
+            <div class="caption">
+                <f:if condition="{file.title}">
+                    <h2>{file.title -> f:format.raw()}</h2>
+                </f:if>
+                <f:if condition="{file.description}">
+                    <p>
+                        {file.description -> f:format.raw()}
+                    </p>
+                </f:if>
+            </div>
+        </div>
+    </f:for>
 </f:if>
 

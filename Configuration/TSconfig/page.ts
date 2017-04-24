@@ -2,6 +2,26 @@ tx_gridelements {
     excludeLayoutIds = slider,tabsSimple,tabs4,tabs6,accordion,slider
 }
 
+// for pages
+TCEMAIN.table.pages {
+    disablePrependAtCopy = 1
+    disableHideAtCopy = 0
+}
+
+// for content elements
+TCEMAIN.table.tt_content {
+    disablePrependAtCopy = 1
+    disableHideAtCopy = 1
+}
+
+TCEFORM.tt_content.header_layout.removeItems = 0,5,6
+TCEFORM.tt_content.header_layout.altLabels {
+    1 = H1
+    2 = H2
+    3 = H3
+    4 = H4
+}
+
 TCEFORM.tt_content.layout.altLabels.1 = runde Bilder
 TCEFORM.tt_content.layout.removeItems = 2,3
 

@@ -2,18 +2,17 @@
 
 <f:section name="stage">
 
-    {contentStage -> f:format.raw()}
+    <div class="stageInner slickslider">
+        <f:cObject typoscriptObjectPath="lib.contentStage" />
+    </div>
 
 </f:section>
 
 <f:section name="main">
-
     <!-- Content starts here -->
     <div class="container content">
 
         <f:cObject typoscriptObjectPath="lib.contentMain" />
-
-
 
 
     </div>

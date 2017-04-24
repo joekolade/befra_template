@@ -57,6 +57,10 @@ page.10.variables {
     layout.data = levelfield:-2,backend_layout_next_level,slide
     layout.override.field = backend_layout
 
+    hasStage = TEXT
+    hasStage.value = 1
+
+
     logoFile = FILE
     logoFile.file = {$befra_template.site.logoFile}
 
@@ -121,13 +125,9 @@ page.10.variables {
 
 lib {
 
-    contentStage = COA
+    contentStage < lib.content_get
     contentStage {
-        10 < lib.content_get
-        10 {
-            select.where = {#colPos}=11
-            #slide = -1
-        }
+        select.where = {#colPos}=11
     }
 
     contentMain < lib.content_get
@@ -157,7 +157,6 @@ lib {
     superFooter < lib.content_get
     superFooter {
         select.where = {#colPos}=41
-        select.languageField = sys_language_uid
         slide = -1
     }
 }
