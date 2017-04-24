@@ -14,6 +14,11 @@ TCEMAIN.table.tt_content {
     disableHideAtCopy = 1
 }
 
+// Not used CEs
+TCEFORM.tt_content.CType {
+    removeItems = text,textpic,image,login,div
+}
+
 TCEFORM.tt_content.header_layout.removeItems = 0,5,6
 TCEFORM.tt_content.header_layout.altLabels {
     1 = H1
