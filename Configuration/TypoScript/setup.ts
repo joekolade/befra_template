@@ -137,26 +137,26 @@ lib {
 
     contentFooterLeft < lib.content_get
     contentFooterLeft {
-        select.where = {#colPos}=31
+        select.where = {#colPos}=51
         slide = -1
     }
 
     contentFooterMiddle < lib.content_get
     contentFooterMiddle {
-        select.where = {#colPos}=32
+        select.where = {#colPos}=52
         slide = -1
     }
 
     contentFooterRight < lib.content_get
     contentFooterRight {
-        select.where = {#colPos}=33
+        select.where = {#colPos}=53
         slide = -1
     }
 
 
     superFooter < lib.content_get
     superFooter {
-        select.where = colPos = 41
+        select.where = {#colPos}=41
         select.languageField = sys_language_uid
         slide = -1
     }

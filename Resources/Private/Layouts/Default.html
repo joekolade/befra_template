@@ -5,9 +5,11 @@
 <f:render partial="Navigation" arguments="{_all}"/>
 
 <div class="wrapper">
-    <div class="container stage">
-        <f:render section="stage"/>
-    </div>
+    <f:if condition="{layout}==1">
+        <div class="container stage">
+            <f:render section="stage"/>
+        </div>
+    </f:if>
 
     {breadCrumb -> f:format.raw()}
 

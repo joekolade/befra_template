@@ -10,9 +10,19 @@
 
     <!-- Content starts here -->
     <div class="container content">
-        {contentMain -> f:format.raw()}
 
         <f:cObject typoscriptObjectPath="lib.contentMain" />
+
+
+
+
+    </div>
+    <f:comment>
+        <f:if condition="{layout} == 1">
+            tbd
+        </f:if>
+        {contentMain -> f:format.raw()}
+
 
 
         <h1>Verkauf und Vermietung von Trafostationen</h1>
@@ -121,13 +131,6 @@
             </div>
         </div>
 
-
-    </div>
-    <f:comment>
-        <f:if condition="{layout} == 1">
-            tbd
-        </f:if>
-        {contentMain -> f:format.raw()}
     </f:comment>
 
 </f:section>
