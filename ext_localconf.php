@@ -9,4 +9,4 @@
 
 
 // Set presets
-$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['fetscher_preset'] = 'EXT:ckeditor_custom/Configuration/RTE/Fetscher.yaml';
+$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['fetscher_preset'] = 'EXT:befra_template/Configuration/RTE/Fetscher.yaml';
