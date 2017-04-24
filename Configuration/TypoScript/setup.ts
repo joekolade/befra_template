@@ -113,6 +113,20 @@ page.10.variables {
         }
     }
 
+    breadCrumb = HMENU
+    breadCrumb {
+        special = rootline
+        wrap = <ol class="breadcrumb hidden-xs">|</ol>
+        1 = TMENU
+        1 {
+            NO = 1
+            NO.wrapItemAndSub = <li>|</li>
+
+            CUR < .NO
+            CUR.wrapItemAndSub = <li class="active">|</li>
+        }
+    }
+
     metaNaviFooter < .metaNavi
     metaNaviFooter {
         20.1.NO.ATagParams = class="btn" rel="nofollow"

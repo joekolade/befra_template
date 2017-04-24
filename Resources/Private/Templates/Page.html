@@ -3,25 +3,20 @@
 <f:section name="stage">
 
     <div class="stageInner slickslider">
-        <f:cObject typoscriptObjectPath="lib.contentStage" />
+        <f:cObject typoscriptObjectPath="lib.contentStage"/>
     </div>
 
 </f:section>
 
 <f:section name="main">
-    <!-- Content starts here -->
-    <div class="container content">
 
-        <f:cObject typoscriptObjectPath="lib.contentMain" />
+    <f:cObject typoscriptObjectPath="lib.contentMain"/>
 
-
-    </div>
     <f:comment>
         <f:if condition="{layout} == 1">
             tbd
         </f:if>
         {contentMain -> f:format.raw()}
-
 
 
         <h1>Verkauf und Vermietung von Trafostationen</h1>
