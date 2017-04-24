@@ -43,15 +43,14 @@ $EM_CONF[$_EXTKEY] = array(
 		'conflicts' => array(
 		),
 		'suggests' => array(
-			'ns_all_lightbox' => '',
             'fluid-styled-responsive-images' => '',
+            'jh_magnificpopup' => '',
 			'rx_unrollsavebuttons' => '',
 			'go_maps_ext' => '',
 			'fsc_layout_wrap' => '',
 			'frontend_editing' => '',
 			'lib_js_lazysizes' => '', // https://github.com/joekolade/lib_js_lazysizes
 			'cookieconsent2' => ''
-//			'vhs' => '',
 		),
 	),
 );

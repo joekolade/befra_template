@@ -31,8 +31,10 @@ page.includeCSS {
 page.includeJS.modernizr = EXT:befra_template/Resources/Public/JavaScripts/vendor/modernizr.js
 page.includeJS.vendor = EXT:befra_template/Resources/Public/JavaScripts/vendor.js
 
-page.includeJSFooter {
+page.includeJSFooterlibs {
     plugins = EXT:befra_template/Resources/Public/JavaScripts/plugins.js
+}
+page.includeJSFooter {
     main = EXT:befra_template/Resources/Public/JavaScripts/main.js
 }
 
