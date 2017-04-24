@@ -1,6 +1,34 @@
 {
     "tt_content": {
         "elements": {
+            "selectordropdown": {
+                "label": "Dropdown",
+                "key": "selectordropdown",
+                "shortLabel": "",
+                "description": "Dropdown mit Links",
+                "icon": "fa-list-alt",
+                "color": "#e97100",
+                "columns": [
+                    "tx_mask_options"
+                ],
+                "labels": [
+                    "Optionen"
+                ]
+            },
+            "selectormadness": {
+                "label": "Dropdown Container",
+                "key": "selectormadness",
+                "shortLabel": "",
+                "description": "Container f\u00fcr Dropdowns",
+                "icon": "fa-list-alt",
+                "color": "#ff7d00",
+                "columns": [
+                    "tx_mask_selectors"
+                ],
+                "labels": [
+                    "Dropdowns"
+                ]
+            },
             "spacer": {
                 "label": "Spacer",
                 "key": "spacer",
@@ -229,15 +257,97 @@
             }
         }
     },
-    "pages": {
-
-    },
+    "pages": [],
     "sys_file_reference": {
         "sql": {
             "tx_mask_agencylogo": {
                 "sys_file_reference": {
                     "tx_mask_agencylogo": "int(11) unsigned DEFAULT '0' NOT NULL"
                 }
+            }
+        }
+    },
+    "tx_mask_undefined": {
+        "sql": {
+            "tx_mask_opt_value": {
+                "tx_mask_undefined": {
+                    "tx_mask_opt_value": "tinytext"
+                }
+            },
+            "tx_mask_opt_selected": {
+                "tx_mask_undefined": {
+                    "tx_mask_opt_selected": "int(11) DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_opt_link": {
+                "tx_mask_undefined": {
+                    "tx_mask_opt_link": "tinytext"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_opt_value": {
+                "config": {
+                    "type": "input",
+                    "eval": "required,trim",
+                    "default": "",
+                    "placeholder": "",
+                    "size": "",
+                    "max": "",
+                    "is_in": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_undefined",
+                "label": "Beschriftung",
+                "key": "opt_value"
+            },
+            "tx_mask_opt_selected": {
+                "config": {
+                    "type": "check",
+                    "items": [
+                        [
+                            "ausgew\u00e4hlt"
+                        ]
+                    ],
+                    "cols": "",
+                    "default": "0"
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_undefined",
+                "label": "Vorausgew\u00e4hlt",
+                "key": "opt_selected"
+            },
+            "tx_mask_opt_link": {
+                "config": {
+                    "type": "input",
+                    "wizards": {
+                        "_PADDING": "2",
+                        "link": {
+                            "type": "popup",
+                            "title": "Link",
+                            "icon": "EXT:backend\/Resources\/Public\/Images\/FormFieldWizard\/wizard_link.gif",
+                            "module": {
+                                "name": "wizard_link",
+                                "urlParameters": {
+                                    "mode": "wizard"
+                                }
+                            },
+                            "JSopenParams": "height=300,width=500,status=0,menubar=0,scrollbars=1",
+                            "params": {
+                                "blindLinkOptions": "file,mail,folder",
+                                "allowedExtensions": ""
+                            }
+                        }
+                    },
+                    "eval": "trim",
+                    "default": "",
+                    "placeholder": "",
+                    "size": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_undefined",
+                "label": "Link",
+                "key": "opt_link"
             }
         }
     }
