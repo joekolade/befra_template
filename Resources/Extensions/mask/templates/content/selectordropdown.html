@@ -3,7 +3,7 @@
         <f:for each="{data.tx_mask_options}" as="data_item">
             <option
                     value="<f:uri.typolink parameter='{data_item.tx_mask_opt_link}' />"
-                    {f:if(condition: data_item.tx_mask_opt_selected, then: 'selected="selected"', else: '0')}
+                    {f:if(condition: data_item.tx_mask_opt_selected, then: 'selected="selected"', else: '')}
             >{data_item.tx_mask_opt_value}</option>
         </f:for>
     </select>

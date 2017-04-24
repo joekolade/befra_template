@@ -1,0 +1,11 @@
+<f:if condition="{data.tx_mask_options}">
+    <ul>
+        <f:for each="{data.tx_mask_options}" as="data_item">
+            <li>
+                {data_item.tx_mask_opt_value} // <f:uri.typolink parameter='{data_item.tx_mask_opt_link}' />{f:if(condition: data_item.tx_mask_opt_selected, then: ' // *', else: '')}
+            </li>
+
+        </f:for>
+    </ul>
+</f:if>
+
