@@ -1,0 +1,13 @@
+<div class="selectorMadness">
+    <f:if condition="{data.tx_mask_selectors}">
+        <form action="">
+            <div class="row">
+                <f:for each="{data.tx_mask_selectors}" as="data_item">
+                    <div class="col-sm-4">
+                        <f:cObject typoscriptObjectPath="lib.tx_mask.content">{data_item.uid}</f:cObject>
+                    </div>
+                </f:for>
+            </div>
+        </form>
+    </f:if>
+</div>
