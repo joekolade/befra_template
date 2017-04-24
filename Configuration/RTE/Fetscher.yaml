@@ -31,14 +31,15 @@ editor:
     # CSS stylesheet
     contentsCss: "EXT:befra_template/Resources/Public/Css/rte.css"
 
+
     stylesSet:
       # block level styles
-      - { name: "Colored title H2", element: "h2", styles: { color: "maroon", background: "lime" } }
-      - { name: "Orange title H3", element: "h3", attributes: { class: "custom_header_class"} }
+      - { name: "Markierter block", element: "p", attributes: { class: 'text-warning' } }
       #- { name: "Quote / Citation", element: "blockquote" }
       #- { name: "Code block", element: "code" }
       # Inline styles
-      - { name: "Red marker", element: "span", styles: { background-color: "red", color: "white" } }
+      - { name: "Markierter block", element: "span", attributes: { class: 'text-warning' } }
+      #- { name: "Red marker", element: "span", styles: { background-color: "red", color: "white" } }
 
     # Plugin configuration
     removePlugins:
