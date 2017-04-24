@@ -6,3 +6,7 @@
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig(
     '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:befra_template/Configuration/TSconfig/user.ts">'
 );
+
+
+// Set presets
+$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['fetscher_preset'] = 'EXT:ckeditor_custom/Configuration/RTE/Fetscher.yaml';
