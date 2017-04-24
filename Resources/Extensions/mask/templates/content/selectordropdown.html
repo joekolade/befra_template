@@ -1,0 +1,14 @@
+<f:if condition="{data.tx_mask_options}">
+    <select name="select74" id="select74" class="select2 form-control">
+        <f:for each="{data.tx_mask_options}" as="data_item">
+            <option
+                    value="{data_item.tx_mask_opt_link}"
+                    selected="{f:if(condition: data_item.tx_mask_opt_selected, then: 'selected', else: '0')}"
+            >
+                {data_item.tx_mask_opt_value} ({data_item.tx_mask_opt_link}) [<f:link.typolink parameter="{data_item.tx_mask_opt_link}">]
+            </option>
+
+        </f:for>
+    </select>
+</f:if>
+
