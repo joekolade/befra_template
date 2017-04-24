@@ -38,11 +38,11 @@ page.includeJSFooter {
 
 #
 # Fix missing lib.content.get
-lib.content_get < styles.content.get
+lib.content_get =< styles.content.get
 lib.content_get {
     select {
         languageField = sys_language_uid
-        where = colPos=0
+        where = {#colPos}=0
     }
 }
 
@@ -52,6 +52,7 @@ lib.content_get {
 *
 */
 page.10.variables {
+
     layout = TEXT
     layout.data = levelfield:-2,backend_layout_next_level,slide
     layout.override.field = backend_layout
@@ -112,48 +113,55 @@ page.10.variables {
     metaNaviFooter {
         20.1.NO.ATagParams = class="btn" rel="nofollow"
     }
+}
+
+/**
+* Content Blocks
+*/
+
+lib {
 
     contentStage = COA
     contentStage {
         10 < lib.content_get
         10 {
-            select.where = colPos = 11
-            select.languageField = sys_language_uid
-            slide = -1
+            select.where = {#colPos}=11
+            #slide = -1
         }
     }
 
     contentMain < lib.content_get
     contentMain {
-        select.where = colPos = 21
-        select.languageField = sys_language_uid
+        select.where = {#colPos}=21
     }
 
     contentFooterLeft < lib.content_get
     contentFooterLeft {
-        select.where = colPos=31
+        select.where = {#colPos}=31
         slide = -1
     }
 
     contentFooterMiddle < lib.content_get
     contentFooterMiddle {
-        select.where = colPos=32
+        select.where = {#colPos}=32
         slide = -1
     }
 
     contentFooterRight < lib.content_get
     contentFooterRight {
-        select.where = colPos=33
+        select.where = {#colPos}=33
+        slide = -1
+    }
+
+
+    superFooter < lib.content_get
+    superFooter {
+        select.where = colPos = 41
+        select.languageField = sys_language_uid
         slide = -1
     }
 }
 
-lib.superFooter < lib.content_get
-lib.superFooter {
-    select.where = colPos = 41
-    select.languageField = sys_language_uid
-    slide = -1
-}
 
 /**
 * Lightbox und Title

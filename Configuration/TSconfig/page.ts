@@ -74,99 +74,99 @@ RTE.colors {
 // Backend layouts
 //
 
-mod.web_layout.BackendLayouts {
-    1 {
-        title = Startseite
-        #icon = EXT:example_extension/Resources/Public/Images/BackendLayouts/default.gif
-        config {
-            backend_layout {
-                colCount = 3
-                rowCount = 4
-                rows {
-                    1 {
-                        columns {
-                            1 {
-                                name = Stage
-                                colspan = 3
-                                colPos = 11
-                                allowed = *
-                                allowedGridType = *
-                            }
-                        }
-                    }
-
-                    2 {
-                        columns {
-                            1 {
-                                name = Inhalt
-                                colspan = 3
-                                colPos = 21
-                                allowed = *
-                                allowedGridType = *
-                            }
-                        }
-                    }
-
-                    3 {
-                        columns {
-                            1 {
-                                name = Footer links
-                                colPos = 51
-                                allowed = *
-                                allowedGridType = *
-                            }
-
-                            2 {
-                                name = Footer mitte
-                                colPos = 52
-                                allowed = *
-                                allowedGridType = *
-                            }
-
-                            3 {
-                                name = Footer rechts
-                                colPos = 53
-                                allowed = *
-                                allowedGridType = *
-                            }
-                        }
-                    }
-
-                    4 {
-                        columns {
-                            1 {
-                                name = Footer (unterhalb)
-                                colspan = 3
-                                colPos = 41
-                                allowed = list
-                                allowedGridType = *
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    3 {
-        title = Standard-Seite
-        #icon = EXT:example_extension/Resources/Public/Images/BackendLayouts/default.gif
-        config {
-            backend_layout {
-                colCount = 1
-                rowCount = 1
-                rows {
-                    1 {
-                        columns {
-                            1 {
-                                name = Inhalt
-                                colPos = 21
-                                allowed = *
-                                allowedGridType = *
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+#mod.web_layout.BackendLayouts {
+#    1 {
+#        title = Startseite
+#        #icon = EXT:example_extension/Resources/Public/Images/BackendLayouts/default.gif
+#        config {
+#            backend_layout {
+#                colCount = 3
+#                rowCount = 4
+#                rows {
+#                    1 {
+#                        columns {
+#                            1 {
+#                                name = Stage
+#                                colspan = 3
+#                                colPos = 11
+#                                allowed = *
+#                                allowedGridType = *
+#                            }
+#                        }
+#                    }
+#
+#                    2 {
+#                        columns {
+#                            1 {
+#                                name = Inhalt
+#                                colspan = 3
+#                                colPos = 21
+#                                allowed = *
+#                                allowedGridType = *
+#                            }
+#                        }
+#                    }
+#
+#                    3 {
+#                        columns {
+#                            1 {
+#                                name = Footer links
+#                                colPos = 51
+#                                allowed = *
+#                                allowedGridType = *
+#                            }
+#
+#                            2 {
+#                                name = Footer mitte
+#                                colPos = 52
+#                                allowed = *
+#                                allowedGridType = *
+#                            }
+#
+#                            3 {
+#                                name = Footer rechts
+#                                colPos = 53
+#                                allowed = *
+#                                allowedGridType = *
+#                            }
+#                        }
+#                    }
+#
+#                    4 {
+#                        columns {
+#                            1 {
+#                                name = Footer (unterhalb)
+#                                colspan = 3
+#                                colPos = 41
+#                                allowed = list
+#                                allowedGridType = *
+#                            }
+#                        }
+#                    }
+#                }
+#            }
+#        }
+#    }
+#    3 {
+#        title = Standard-Seite
+#        #icon = EXT:example_extension/Resources/Public/Images/BackendLayouts/default.gif
+#        config {
+#            backend_layout {
+#                colCount = 1
+#                rowCount = 1
+#                rows {
+#                    1 {
+#                        columns {
+#                            1 {
+#                                name = Inhalt
+#                                colPos = 21
+#                                allowed = *
+#                                allowedGridType = *
+#                            }
+#                        }
+#                    }
+#                }
+#            }
+#        }
+#    }
+#}

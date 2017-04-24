@@ -22,23 +22,23 @@ befra_template {
 *
 */
 
-#plugin.tx_scriptmerger.css.compress.enable = 0
-#plugin.tx_scriptmerger.javascript.compress.enable = 0
-#plugin.tx_scriptmerger.css.enable = 0
+plugin.tx_scriptmerger.css.compress.enable = 0
+plugin.tx_scriptmerger.javascript.compress.enable = 0
+plugin.tx_scriptmerger.css.enable = 0
 
 /**
 * Activate lightbox
 *
 */
-#styles.content.textmedia.linkWrap.lightboxEnabled = 1
+styles.content.textmedia.linkWrap.lightboxEnabled = 1
 
 /**
 * Fluid Styled Content
 *
 */
-#styles.templates.layoutRootPath = EXT:befra_template/Resources/Extensions/fsc/Layouts
-#styles.templates.templateRootPath = EXT:befra_template/Resources/Extensions/fsc/Templates
-#styles.templates.partialRootPath = EXT:befra_template/Resources/Extensions/fsc/Partials
+styles.templates.layoutRootPath = EXT:befra_template/Resources/Extensions/fsc/Layouts
+styles.templates.templateRootPath = EXT:befra_template/Resources/Extensions/fsc/Templates
+styles.templates.partialRootPath = EXT:befra_template/Resources/Extensions/fsc/Partials
 
-#<INCLUDE_TYPOSCRIPT: source="DIR:EXT:befra_template/Configuration/TypoScript/Constants/" extension="ts">
-#<INCLUDE_TYPOSCRIPT: source="DIR:EXT:befra_template/Configuration/TypoScript/Extensions/" extension="tsconst">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:befra_template/Configuration/TypoScript/Constants/" extension="ts">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:befra_template/Configuration/TypoScript/Extensions/" extension="tsconst">
