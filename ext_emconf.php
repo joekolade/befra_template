@@ -50,7 +50,8 @@ $EM_CONF[$_EXTKEY] = array(
 			'fsc_layout_wrap' => '',
 			'frontend_editing' => '',
 			'lib_js_lazysizes' => '', // https://github.com/joekolade/lib_js_lazysizes
-			'cookieconsent2' => ''
+			'cookieconsent2' => '',
+			'ckeditor_custom' => ''
 		),
 	),
 );
