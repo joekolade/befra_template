@@ -38,11 +38,13 @@ $black: #000000;
 
 $orange: #f37d00;
 $orange-dark: #e97100;
+$red: #A94442;
 $grey: #b6b6b6;
 $gray-dark: #333333;
 $gray-special: #4d4d4d;
 $gray-middle: #878787;
 $gray-light: #f0f1ef;
+$gray-pl: #b7b6ac;
 $blue: #00a5e9;
 $blue-light: #dbeefb;
 $blue-dark: #c2cdd5;
@@ -55,6 +57,11 @@ $state-danger-text: $pink;
 
 $link-hover-decoration: underline;
 $link-color: $gray-dark;
+
+$form-input-color: $gray-pl;
+$form-input-bg: $black;
+$form-submit-color: $orange;
+$form-error-color: $red;
 
 // Header
 //

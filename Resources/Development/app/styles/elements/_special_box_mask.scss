@@ -5,7 +5,7 @@
 
   @include textcolor($white);
 
-  div[class^="col-"] {
+  > div[class^="col-"] {
     width: 100%;
 
     &:first-child {
