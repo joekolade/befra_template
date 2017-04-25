@@ -7,7 +7,7 @@ editor:
   config:
 
     # available block level elements
-    format_tags: "p;h1;h2;h3;pre"
+    format_tags: "p;h1;h2;h3;h4"
 
     # toolbar // use button configuration if needed
     # http://ckeditor.com/latest/samples/toolbarconfigurator/index.html#basic

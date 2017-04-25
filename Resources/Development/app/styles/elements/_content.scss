@@ -143,3 +143,42 @@ b, strong {
     border-radius: 50%;
   }
 }
+
+
+// TYPO3 specific
+//
+
+.frame-space-before {
+  &-extra-small {
+    margin-top: 1rem;
+  }
+  &-small {
+    margin-top: 1.5rem;
+  }
+  &-medium {
+    margin-top: 2rem;
+  }
+  &-large {
+    margin-top: 2.5rem;
+  }
+  &-extra-large {
+    margin-top: 3rem;
+  }
+}
+.frame-space-after {
+  &-extra-small {
+    margin-bottom: 1rem;
+  }
+  &-small {
+    margin-bottom: 1.5rem;
+  }
+  &-medium {
+    margin-bottom: 2rem;
+  }
+  &-large {
+    margin-bottom: 2.5rem;
+  }
+  &-extra-large {
+    margin-bottom: 3rem;
+  }
+}
