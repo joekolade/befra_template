@@ -1,0 +1,82 @@
+.tx-powermail {
+  .container-fluid {
+    padding: 0;
+  }
+
+  input,
+  textarea {
+    background-color: $form-input-bg;
+    color: $form-input-color;
+
+    &::placeholder {
+      color: $form-input-color;
+    }
+  }
+
+  .powermail_submit {
+    width: 100%;
+    text-align: left;
+
+    background-color: $form-submit-bg;
+    color: $form-submit-color;
+  }
+
+  .form-group {
+    margin-bottom: 0.6em;
+  }
+
+  .form-control {
+    min-height: 29px;
+    height: auto;
+    padding: 8px 12px 10px;
+  }
+
+  .nolabel {
+    .col-sm-10 {
+      width: 100%;
+      float: none;
+    }
+  }
+
+
+  .powermail_fieldset .powermail_field_error,
+  .powermail_fieldset .parsley-error,
+  .powermail_fieldset .powermail_form .parsley-error:focus,
+  .powermail_fieldset div.error {
+    background-color: $form-input-bg;
+
+    &::placeholder {
+      color: $form-error-color;
+    }
+  }
+
+  // in special box
+  .specialBox & {
+
+    input,
+    textarea {
+      background-color: $form-invert-input-bg;
+      color: $form-invert-input-color;
+
+      &::placeholder {
+        color: $form-invert-input-color;
+      }
+    }
+
+    .powermail_submit {
+      background-color: $form-invert-submit-bg;
+      color: $form-invert-submit-color;
+    }
+
+    .powermail_fieldset .powermail_field_error,
+    .powermail_fieldset .parsley-error,
+    .powermail_fieldset .powermail_form .parsley-error:focus,
+    .powermail_fieldset div.error {
+      background-color: $form-invert-input-bg;
+
+      &::placeholder {
+        color: $form-invert-error-color;
+      }
+    }
+  }
+}
