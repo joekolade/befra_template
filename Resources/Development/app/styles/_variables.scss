@@ -58,8 +58,6 @@ $state-danger-text: $pink;
 
 $body-bg: $gray-bg;
 
-$bullet-line: lighten($gray-pl, 10%);
-
 $link-hover-decoration: underline;
 $link-color: $gray-dark;
 
@@ -155,6 +153,13 @@ $superfooter-bg-color: $blue-dark;
 //
 
 $specialbox-bg-color: $black;
+
+// Bulletlists w/ line
+//
+
+$bullet-line: lighten($gray-pl, 10%);
+$bullet-line-width: 30px;
+
 
 // Forms
 //

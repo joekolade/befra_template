@@ -3,13 +3,14 @@
   margin: 0;
   padding: 0;
   position: relative;
+  margin-bottom: 2.5em;
 
   &::before {
     content: '';
     position: absolute;
     top: -0.5em;
     left: 0;
-    width: 20px;
+    width: $bullet-line-width;
     border-top: thin solid $bullet-line;
   }
 
@@ -22,7 +23,7 @@
       position: absolute;
       bottom: -0.5em;
       left: 0;
-      width: 20px;
+      width: $bullet-line-width;
       border-bottom: thin solid $bullet-line;
     }
   }
