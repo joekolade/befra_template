@@ -10822,11 +10822,11 @@ b, strong {
 
 
 p.special {
-  margin: 0 -.3em 0.3em;
-  padding: 0.1em .3em 0.2em;
-  background: #f4f4f0;
-  border-radius: 6px;
-
+    margin: 0 -.3em 0.3em;
+    padding: 0.1em .3em 0.2em;
+    background: #f4f4f0;
+    border-radius: 6px;
+}
 p.special:last-of-type {
   margin-top: 0.8em;
 }
