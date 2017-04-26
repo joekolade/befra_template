@@ -29,18 +29,17 @@ editor:
     # removeButtons:
 
     # CSS stylesheet
-    contentsCss: "EXT:befra_template/Resources/Public/Css/rte.css"
+    #contentsCss: "EXT:befra_template/Resources/Public/Css/rte.css"
+    contentsCss: ["EXT:rte_ckeditor/Resources/Public/Css/contents.css", "EXT:befra_template/Resources/Public/Css/rte.css"]
+
 
 
     stylesSet:
       # block level styles
-      - { name: "Abgehobener text", element: "p", attributes: { class: 'special' } }
+      - { name: "Text in Box", element: "p", attributes: { class: 'special' } }
       - { name: "Markierter block", element: "p", attributes: { class: 'text-danger' } }
-      #- { name: "Quote / Citation", element: "blockquote" }
-      #- { name: "Code block", element: "code" }
       # Inline styles
       - { name: "Markierter text", element: "span", attributes: { class: 'text-danger' } }
-      #- { name: "Red marker", element: "span", styles: { background-color: "red", color: "white" } }
 
     # Plugin configuration
     removePlugins:

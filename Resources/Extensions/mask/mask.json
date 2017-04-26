@@ -8,11 +8,11 @@
                 "description": "Dropdown mit Links",
                 "icon": "fa-list-alt",
                 "color": "#e97100",
-                "columns": [
-                    "tx_mask_options"
-                ],
                 "labels": [
                     "Optionen"
+                ],
+                "columns": [
+                    "tx_mask_options"
                 ]
             },
             "selectormadness": {
@@ -83,6 +83,16 @@
             "tx_mask_spacer_height_lg": {
                 "tt_content": {
                     "tx_mask_spacer_height_lg": "tinytext"
+                }
+            },
+            "tx_mask_selectors": {
+                "tt_content": {
+                    "tx_mask_selectors": "int(11) unsigned DEFAULT '0' NOT NULL"
+                }
+            },
+            "tx_mask_options": {
+                "tt_content": {
+                    "tx_mask_options": "int(11) unsigned DEFAULT '0' NOT NULL"
                 }
             }
         },
@@ -254,6 +264,64 @@
                 },
                 "exclude": "1",
                 "key": "spacer_height_lg"
+            },
+            "tx_mask_selectors": {
+                "config": {
+                    "type": "inline",
+                    "foreign_table": "tt_content",
+                    "foreign_record_defaults": {
+                        "colPos": "999"
+                    },
+                    "foreign_sortby": "sorting",
+                    "appearance": {
+                        "collapseAll": "1",
+                        "levelLinksPosition": "top",
+                        "showSynchronizationLink": "1",
+                        "showPossibleLocalizationRecords": "1",
+                        "showAllLocalizationLink": "1",
+                        "useSortable": "1",
+                        "enabledControls": {
+                            "dragdrop": "1"
+                        },
+                        "expandSingle": "1",
+                        "newRecordLinkTitle": ""
+                    },
+                    "minitems": "",
+                    "maxitems": "",
+                    "behaviour": {
+                        "localizationMode": "select"
+                    }
+                },
+                "exclude": "1",
+                "cTypes": [
+                    "mask_selectordropdown"
+                ],
+                "key": "selectors"
+            },
+            "tx_mask_options": {
+                "config": {
+                    "type": "inline",
+                    "foreign_table": "--inlinetable--",
+                    "foreign_field": "parentid",
+                    "foreign_table_field": "parenttable",
+                    "foreign_sortby": "sorting",
+                    "appearance": {
+                        "enabledControls": {
+                            "dragdrop": "1"
+                        },
+                        "newRecordLinkTitle": "",
+                        "levelLinksPosition": "top"
+                    },
+                    "minitems": "",
+                    "maxitems": "",
+                    "behaviour": {
+                        "localizationMode": "select"
+                    }
+                },
+                "exclude": "1",
+                "inlineLabel": "",
+                "inlineIcon": "",
+                "key": "options"
             }
         }
     },
@@ -348,6 +416,90 @@
                 "inlineParent": "tx_mask_undefined",
                 "label": "Link",
                 "key": "opt_link"
+            }
+        }
+    },
+    "tx_mask_options": {
+        "sql": {
+            "tx_mask_opt_value": {
+                "tx_mask_options": {
+                    "tx_mask_opt_value": "tinytext"
+                }
+            },
+            "tx_mask_opt_link": {
+                "tx_mask_options": {
+                    "tx_mask_opt_link": "tinytext"
+                }
+            },
+            "tx_mask_opt_selected": {
+                "tx_mask_options": {
+                    "tx_mask_opt_selected": "int(11) DEFAULT '0' NOT NULL"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_opt_value": {
+                "config": {
+                    "type": "input",
+                    "eval": "required,trim",
+                    "default": "",
+                    "placeholder": "",
+                    "size": "",
+                    "max": "",
+                    "is_in": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_options",
+                "label": "Wert",
+                "key": "opt_value"
+            },
+            "tx_mask_opt_link": {
+                "config": {
+                    "type": "input",
+                    "wizards": {
+                        "_PADDING": "2",
+                        "link": {
+                            "type": "popup",
+                            "title": "Link",
+                            "icon": "EXT:backend\/Resources\/Public\/Images\/FormFieldWizard\/wizard_link.gif",
+                            "module": {
+                                "name": "wizard_link",
+                                "urlParameters": {
+                                    "mode": "wizard"
+                                }
+                            },
+                            "JSopenParams": "height=300,width=500,status=0,menubar=0,scrollbars=1",
+                            "params": {
+                                "blindLinkOptions": "file,mail,folder",
+                                "allowedExtensions": ""
+                            }
+                        }
+                    },
+                    "eval": "",
+                    "default": "",
+                    "placeholder": "",
+                    "size": ""
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_options",
+                "label": "Link",
+                "key": "opt_link"
+            },
+            "tx_mask_opt_selected": {
+                "config": {
+                    "type": "check",
+                    "items": [
+                        [
+                            "Wert vorausgew\u00e4hlt"
+                        ]
+                    ],
+                    "cols": "",
+                    "default": "0"
+                },
+                "exclude": "1",
+                "inlineParent": "tx_mask_options",
+                "label": "Ausgew\u00e4hlt",
+                "key": "opt_selected"
             }
         }
     }
