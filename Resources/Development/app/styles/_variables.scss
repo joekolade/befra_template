@@ -61,18 +61,6 @@ $body-bg: $gray-bg;
 $link-hover-decoration: underline;
 $link-color: $gray-dark;
 
-$form-input-color: $gray-pl;
-$form-input-bg: $black;
-$form-submit-bg: $black;
-$form-submit-color: $orange;
-$form-error-color: $red;
-
-$form-invert-input-color: $gray-dark;
-$form-invert-input-bg: $white;
-$form-invert-submit-bg: $orange;
-$form-invert-submit-color: $gray-dark;
-$form-invert-error-color: $red;
-
 // Header
 //
 
@@ -172,6 +160,29 @@ $input-border-focus: $orange;
 $input-color-placeholder: $gray-dark;
 
 $input-height-base: ($line-height-computed + ($padding-base-vertical * 1) + 2);
+
+//$form-input-color: $gray-pl;
+//$form-input-bg: $black;
+//$form-submit-bg: $black;
+//$form-submit-color: $orange;
+//$form-error-color: $red;
+$form-input-color: $gray-pl;
+$form-input-bg: $white;
+$form-submit-bg: $white;
+$form-submit-color: $orange;
+$form-error-color: $red;
+
+//$form-invert-input-color: $gray-dark;
+//$form-invert-input-bg: $white;
+//$form-invert-submit-bg: $orange;
+//$form-invert-submit-color: $gray-dark;
+//$form-invert-error-color: $red;
+
+$form-invert-input-color: $gray-dark;
+$form-invert-input-bg: $white;
+$form-invert-submit-bg: $orange;
+$form-invert-submit-color: $gray-dark;
+$form-invert-error-color: $red;
 
 //** `.form-group` margin
 $form-group-margin-bottom: .5em;
