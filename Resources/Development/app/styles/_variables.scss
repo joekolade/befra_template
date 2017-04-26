@@ -4,7 +4,7 @@
 $wrapper-max-width: 1200px;
 $header-bg: white;
 $border-radius-base: 0px;
-$border-radius-images: 8px;
+$border-radius-images: 5px;
 
 $default-transition-property: all;
 $default-transition-duration: 0.3s;
@@ -40,6 +40,7 @@ $orange: #f37d00;
 $orange-dark: #e97100;
 $red: #A94442;
 $grey: #b6b6b6;
+$gray-bg: #f4f4f0;
 $gray-dark: #333333;
 $gray-special: #4d4d4d;
 $gray-middle: #878787;
@@ -54,6 +55,10 @@ $brand-warning: $orange;
 
 $brand-danger: $pink;
 $state-danger-text: $pink;
+
+$body-bg: $gray-bg;
+
+$bullet-line: lighten($gray-pl, 10%);
 
 $link-hover-decoration: underline;
 $link-color: $gray-dark;
@@ -113,7 +118,7 @@ $navbar-default-link-hover-bg: $orange-dark;
 $navbar-default-link-active-color: white;
 $navbar-default-link-active-bg: $orange-dark;
 
-$navbar-sub-default-bg: $white;
+$navbar-sub-default-bg: $gray-bg;
 $navbar-sub-default-link-color: $gray-dark;
 $navbar-sub-default-link-hover-color: white;
 $navbar-sub-default-link-hover-bg: $orange;

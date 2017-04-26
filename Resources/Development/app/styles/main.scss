@@ -34,7 +34,7 @@ body {
   padding-bottom: 80px;
   //background: #B3B3B3 url(../Images/BG_SB.png) center repeat;
   //background: #8c8c8c;
-  background: #f4f4f0 url(../Images/3D-Linien-Body.svg) center repeat-y;
+  background: $body-bg url(../Images/3D-Linien-Body.svg) center repeat-y;
   //background-attachment: fixed;
   background-size: 100vw auto;
 
@@ -98,6 +98,7 @@ body {
 @import "elements/spacer_mask";
 @import "elements/special_box_mask";
 @import "elements/selectormadness";
+@import "elements/bullets";
 
 
 

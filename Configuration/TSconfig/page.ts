@@ -50,7 +50,11 @@ TCEFORM.tt_content.header_layout.altLabels {
     3 = H3
     4 = H4
 }
-
+TCEFORM.tt_content.bullets_type.altLabels {
+    0 = Liste mit Linien (ul)
+    1 = nummerierte Liste
+    2 = Definitions Liste
+}
 TCEFORM.tt_content.layout.altLabels.1 = runde Bilder
 TCEFORM.tt_content.layout.removeItems = 2,3
 

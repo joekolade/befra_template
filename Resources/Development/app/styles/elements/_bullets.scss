@@ -1,0 +1,29 @@
+.ce-bullets {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -0.5em;
+    left: 0;
+    width: 20px;
+    border-top: thin solid $bullet-line;
+  }
+
+  > li {
+    margin-bottom: 1em;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -0.5em;
+      left: 0;
+      width: 20px;
+      border-bottom: thin solid $bullet-line;
+    }
+  }
+}
