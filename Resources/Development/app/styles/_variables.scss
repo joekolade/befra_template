@@ -30,6 +30,8 @@ $line-height-base: 1.428571429;
 $line-height-computed: floor(($font-size-base * $line-height-base)) !default; // ~20px
 $padding-base-vertical: 6px !default;
 
+$fw-bold: 600;
+
 // Colors
 //
 
@@ -149,6 +151,15 @@ $bullet-line: lighten($gray-pl, 10%);
 $bullet-line-width: 30px;
 
 
+// Selector madness
+//
+
+$selectorbox-bg: $body-bg;
+$selectorbox-selected-bg: $white;
+$selectorbox-selected-color: $orange;
+$selectorbox-high-bg: $orange;
+$selectorbox-high-color: $white;
+
 // Forms
 //
 
@@ -166,6 +177,7 @@ $input-height-base: ($line-height-computed + ($padding-base-vertical * 1) + 2);
 //$form-submit-bg: $black;
 //$form-submit-color: $orange;
 //$form-error-color: $red;
+
 $form-input-color: $gray-pl;
 $form-input-bg: $white;
 $form-submit-bg: $white;
