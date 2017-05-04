@@ -15,6 +15,7 @@ editor:
       - { name: 'styles', groups: [ 'styles' ] }
       - { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ] }
       - { name: 'paragraph', groups: [ 'list', 'indent', 'blocks', 'align', 'bidi', 'paragraph' ] }
+      - { name: 'colors', items: [ 'TextColor' ] },
       - { name: 'links', groups: [ 'links' ] }
       - { name: 'clipboard', groups: [ 'clipboard', 'undo' ] }
       - { name: 'editing', groups: [ 'spellchecker', 'find', 'selection', 'editing' ] }
