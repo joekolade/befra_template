@@ -15,7 +15,6 @@ editor:
       - { name: 'styles', groups: [ 'styles' ] }
       - { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ] }
       - { name: 'paragraph', groups: [ 'list', 'indent', 'blocks', 'align', 'bidi', 'paragraph' ] }
-      - { name: 'colors', groups: [ 'colors' ] }
       - { name: 'links', groups: [ 'links' ] }
       - { name: 'clipboard', groups: [ 'clipboard', 'undo' ] }
       - { name: 'editing', groups: [ 'spellchecker', 'find', 'selection', 'editing' ] }
@@ -23,6 +22,7 @@ editor:
       - { name: 'tools', groups: [ 'tools' ] }
       - { name: 'others', groups: [ 'others' ] }
       - { name: 'document', groups: [ 'mode', 'doctools', 'document' ] }
+      - { name: 'colors', groups: [  { name: 'colors', items: [ 'TextColor', 'BGColor' ] } ] }
 
     removeButtons: 'Save,NewPage,Preview,Print,Templates,Cut,Copy,Find,Replace,SelectAll,Form,Checkbox,Radio,TextField,Textarea,Select,Button,ImageButton,HiddenField,CreateDiv,BidiLtr,BidiRtl,Language,Image,Flash,PageBreak,Iframe,Smiley,Font,FontSize,About,TextColor,BGColor,Strike,Underline,Subscript,Superscript,CopyFormatting'
 
@@ -38,9 +38,9 @@ editor:
     stylesSet:
       # block level styles
       - { name: "Text in Box", element: "p", attributes: { class: 'special' } }
-      #- { name: "Markierter block", element: "p", attributes: { class: 'text-danger' } }
+      - { name: "Markierter block", element: "p", attributes: { class: 'text-danger' } }
       # Inline styles
-      #- { name: "Markierter text", element: "span", attributes: { class: 'text-danger' } }
+      - { name: "Markierter text", element: "span", attributes: { class: 'text-danger' } }
 
     # Plugin configuration
     removePlugins:
@@ -50,6 +50,10 @@ editor:
       - font
       - find
       - bidi
+      - colorbutton
+      - colordialog
+    colorButton_colors:
+      'CF5D4E,454545,FFF,CCC,DDD,CCEAEE,66AB16'
     justifyClasses:
       - align-left
       - align-center
