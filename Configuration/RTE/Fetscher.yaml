@@ -38,9 +38,9 @@ editor:
     stylesSet:
       # block level styles
       - { name: "Text in Box", element: "p", attributes: { class: 'special' } }
-      - { name: "Markierter block", element: "p", attributes: { class: 'text-danger' } }
+      #- { name: "Markierter block", element: "p", attributes: { class: 'text-danger' } }
       # Inline styles
-      - { name: "Markierter text", element: "span", attributes: { class: 'text-danger' } }
+      #- { name: "Markierter text", element: "span", attributes: { class: 'text-danger' } }
 
     # Plugin configuration
     removePlugins:
