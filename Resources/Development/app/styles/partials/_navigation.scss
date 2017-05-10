@@ -137,6 +137,9 @@
 
       }
 
+      &:hover > a {
+        background-color: darken($navbar-sub-default-bg, 20%);
+      }
       > a:hover,
       > a:active,
       &.active > a {
@@ -191,8 +194,11 @@
     .subnav {
       position: absolute;
       padding-left: 0;
+
       .subnav {
         padding-left: 1px;
+        top: auto;
+        margin-top: -2.9em;
       }
       .subnav li > a,
       li > a {
