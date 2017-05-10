@@ -1,9 +1,10 @@
 .specialBox {
   background: $specialbox-bg-color;
+
   display: flex;
   flex-wrap: wrap;
 
-  @include textcolor($white);
+  @include textcolor($specialbox-color);
 
   > div[class^="col-"] {
     width: 100%;
