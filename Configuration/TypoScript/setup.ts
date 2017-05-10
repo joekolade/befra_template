@@ -17,6 +17,17 @@ page.10 {
     }
 }
 
+
+page.meta {
+    viewport = width=device-width, initial-scale=1
+    # bing webmaster
+    #msvalidate\.01 = 02FC1675B548F7BD5B15EF669CF55844
+    # google site verification
+    #google-site-verification = 9x4g8j2RqMmROgs0wXzcCpTN6Qrusl9gNYabbr5sdRI
+}
+
+config.moveJsFromHeaderToFooter = 1
+
 config.baseURL = http://{$befra_template.site.domain}/
 config.tx_realurl_enable = 1
 config.tx_frontend_editing = 0
