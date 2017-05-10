@@ -26,7 +26,8 @@ page.meta {
     #google-site-verification = 9x4g8j2RqMmROgs0wXzcCpTN6Qrusl9gNYabbr5sdRI
 }
 
-config.moveJsFromHeaderToFooter = 1
+# kills jquery
+#config.moveJsFromHeaderToFooter = 1
 
 config.baseURL = http://{$befra_template.site.domain}/
 config.tx_realurl_enable = 1
