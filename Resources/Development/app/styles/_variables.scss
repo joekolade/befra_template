@@ -47,6 +47,7 @@ $gray-dark: #333333;
 $gray-special: #4d4d4d;
 $gray-middle: #878787;
 $gray-light: #f0f1ef;
+$gray-special2: #d5d4cf;
 $gray-pl: #b7b6ac;
 $blue: #00a5e9;
 $blue-light: #dbeefb;
@@ -165,7 +166,8 @@ $selectorbox-high-color: $white;
 
 $input-bg: $white;
 $input-color: $gray-dark;
-$input-border: transparent;
+$input-border: $gray-pl;
+$input-border-quick: $gray-special2;
 
 $input-border-focus: $orange;
 $input-color-placeholder: $gray-dark;
@@ -180,6 +182,7 @@ $input-height-base: ($line-height-computed + ($padding-base-vertical * 1) + 2);
 
 $form-input-color: $gray-pl;
 $form-input-bg: $white;
+$form-input-border: $input-border;
 $form-submit-bg: $white;
 $form-submit-color: $orange;
 $form-error-color: $red;

@@ -1,23 +1,28 @@
 .tx-powermail {
-    legend {
-        display: none;
+  legend {
+    display: none;
+  }
+
+  .powermail_fieldset .parsley-errors-list {
+    margin-bottom: 0;
+  }
+
+  // Quickform
+  .quick & {
+
+    h3,
+    .control-label {
+      display: none;
     }
 
-    .powermail_fieldset .parsley-errors-list {
-        margin-bottom: 0;
+    .powermail_fieldwrap_type_submit .col-sm-offst-2 {
+      margin-left: 0 !important;
     }
 
-    // Quickform
-    .quick & {
-
-        h3,
-        .control-label {
-            display: none;
-        }
-
-        .powermail_fieldwrap_type_submit .col-sm-offst-2 {
-            margin-left: 0 !important;
-        }
+    input,
+    textarea {
+      border-color: $input-border-quick;
     }
+  }
 
 }
