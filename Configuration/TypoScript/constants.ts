@@ -1,6 +1,6 @@
 befra_template {
     site {
-        domain = dev.befra-energietechnik.de
+        domain = www.befra-energietechnik.de
 
         logoFile = EXT:befra_template/Resources/Public/Images/logo_befra_web.svg
         name = Befra-Energietechnik GmbH
