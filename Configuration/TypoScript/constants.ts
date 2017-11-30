@@ -21,10 +21,42 @@ befra_template {
 * scriptmerger_constants.ts
 *
 */
+plugin.tx_scriptmerger {
+    css {
+        enable = 1
+        minify.enable = 1
+        #minify.ignore = .min.
+
+        compress.enable = 1
+        #compress.ignore = .gz.
+
+        merge.enable = 1
+        #merge.ignore = empty
+    }
+    javascript {
+        enable = 1
+        parseBody = 1
+
+        minify.enable = 1
+        #minify.ignore = ?,.min.
+
+        compress.enable = 1
+        #compress.ignore = ?,.gz.
+
+        merge.enable = 1
+        #merge.ignore
+    }
+}
+
 
 plugin.tx_scriptmerger.css.compress.enable = 0
 plugin.tx_scriptmerger.javascript.compress.enable = 0
 plugin.tx_scriptmerger.css.enable = 0
+
+/**
+* cs_seo
+*/
+plugin.tx_csseo.tracking.googleAnalytics = UA-110462896-1
 
 /**
 * Activate lightbox
