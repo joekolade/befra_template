@@ -29,9 +29,11 @@ page.meta {
 # kills jquery
 #config.moveJsFromHeaderToFooter = 1
 
-config.baseURL = http://{$befra_template.site.domain}/
+config.baseURL = https://{$befra_template.site.domain}/
 config.tx_realurl_enable = 1
 config.tx_frontend_editing = 0
+
+
 
 #
 # Styles & Scripts

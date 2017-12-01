@@ -25,8 +25,9 @@ JSApp.toTopButton = {
         appender: document.getElementsByClassName('wrapper')[0]
     },
 
-    scrollTo: function(element, to, duration) {
+    scrollTo: function(to, duration) {
         var
+            element = document.body.scrollTop ? document.body : (document.documentElement || document.body),
             start = element.scrollTop,
             change = to - start,
             increment = 20,
@@ -68,8 +69,7 @@ JSApp.toTopButton = {
         button.innerHTML = this.options.back_to_top_text;
 
         button.addEventListener('click', function(){
-            var bod = document.body || document.documentElement;
-            _this.scrollTo(bod, 0, _this.options.back_to_top_duration);
+            _this.scrollTo(0, _this.options.back_to_top_duration);
         });
 
         body.appendChild(button);
