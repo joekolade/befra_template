@@ -1,0 +1,11 @@
+window.cookieconsent_options = {
+	message: '{f:translate(key: "message", extensionName: "cookieconsent2")}',
+	learnMore: '{f:translate(key: "learnMore", extensionName: "cookieconsent2")}',
+	dismiss: '{f:translate(key: "dismiss", extensionName: "cookieconsent2")}',
+	container: '{settings.container}',
+	path: '{settings.path}',
+	expiryDays: {settings.expiryDays},
+	<f:if condition="{settings.link}">link: '{f:uri.page(pageUid: settings.link, absolute: 1)}',</f:if>
+	<f:if condition="{settings.theme}"><f:then>theme: '{settings.theme}',</f:then><f:else>theme: false</f:else></f:if>
+	<f:if condition="{settings.domain}">domain: '{settings.domain}',</f:if>
+};

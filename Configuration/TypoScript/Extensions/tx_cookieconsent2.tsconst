@@ -6,3 +6,7 @@ plugin.tx_cookieconsent2.settings {
 
     #theme = dark-bottom
 }
+plugin.tx_cookieconsent2 {
+    view {
+        templateRootPath = EXT:befra_template/Resources/Extensions/cookieconsent2/Templates/
+    }
