@@ -3,3 +3,4 @@ plugin.tx_cookieconsent2._LOCAL_LANG.de {
   dismiss = {$plugin.tx_cookieconsent2.settings.dismiss}
   learnMore = {$plugin.tx_cookieconsent2.settings.learnMore}
 }
+page.jsInline.201105.file = EXT:befra_template/Resources/Extensions/cookieconsent2/Templates/Configuration.html
