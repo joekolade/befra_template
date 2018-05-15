@@ -1,5 +1,3 @@
-// vanilla
-
 // global namespace
 var JSApp = JSApp || {};
 

@@ -56,7 +56,9 @@ plugin.tx_scriptmerger.css.enable = 0
 /**
 * cs_seo
 */
-plugin.tx_csseo.tracking.googleAnalytics = UA-110462896-1
+# no more tracking
+# plugin.tx_csseo.tracking.googleAnalytics = UA-110462896-1
+# Joe Schäfer, Schäfer - Büro für Webentwicklung, joe(at)schafer-webentwicklung.de 15.05.18-22:26
 
 /**
 * Activate lightbox

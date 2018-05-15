@@ -8,3 +8,7 @@ plugin.tx_powermail.settings.styles.bootstrap.offsetClasses =
 plugin.tx_powermail.settings.styles.bootstrap.offsetClassesGeneral = col-sm-offset-2
 
 plugin.tx_powermail.view.partialRootPath = EXT:befra_template/Resources/Extensions/powermail/Partials/
+
+
+plugin.tx_powermail.settings.setup.db.enable = 0
+plugin.tx_powermail.settings.setup.misc.htmlForLabels = 1
