@@ -33,7 +33,7 @@ config.baseURL = https://{$befra_template.site.domain}/
 config.tx_realurl_enable = 1
 config.tx_frontend_editing = 0
 
-
+config.spamProtectEmailAddresses = 1
 
 #
 # Styles & Scripts
@@ -85,6 +85,19 @@ page.10.variables {
 
     pageIds_root = TEXT
     pageIds_root.value = {$befra_template.pageIds.root}
+
+    kontaktlinks = COA
+    kontaktlinks {
+
+        20 = TEXT
+        20.typolink.parameter = tel:00497561912482
+        20.value = +49 (0) 7561 91248-2
+        20.outerWrap = |<br>
+
+        30 = TEXT
+        30.typolink.parameter = info@befra-energietechnik.de
+
+    }
 
     mainNavi = HMENU
     mainNavi {
