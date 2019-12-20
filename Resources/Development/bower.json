@@ -1,13 +1,34 @@
 {
-  "name": "seyboldburka-template",
+  "name": "meinpflegeberuf",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "~3.3.5",
-    "modernizr": "~2.8.1",
-    "slick-carousel": "^1.6.0",
-    "font-awesome": "^4.7.0"
+    "jquery": ">=1.9.1",
+    "hammerjs": "hammer#^2.0.8",
+    "bootstrap": "v4.0.0",
+    "popper.js": "^1.11.0"
   },
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0"
+  },
+  "authors": [
+    "Joekolade <joe@joekola.de>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
   "overrides": {
+    "bootstrap": {
+    "main": [
+        "dist/js/bootstrap.js",
+        "dist/css/bootstrap.css",
+        "scss/boostrap.scss"
+      ]
+    },
     "bootstrap-sass": {
       "main": [
         "assets/stylesheets/_bootstrap.scss",
@@ -15,9 +36,5 @@
         "assets/javascripts/bootstrap.js"
       ]
     }
-  },
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^3.1.2"
   }
 }
