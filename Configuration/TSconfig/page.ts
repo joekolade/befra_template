@@ -72,6 +72,14 @@ TCEFORM.tt_content.imagecols {
 
 TCAdefaults.tt_content.imagecols = 1
 
+# Setzen der Seitenbaumrechte per TypoScript
+TCEMAIN {
+  # "Redaktion"
+  permissions.groupid=1
+  permissions.user=show, editcontent, edit, delete, new
+  permissions.group=show, editcontent, edit, delete, new
+  permissions.everybody=show
+}
 
 // Backend layouts
 //

@@ -325,7 +325,49 @@
             }
         }
     },
-    "pages": [],
+    "pages": {
+        "elements": {
+            "3": {
+                "label": "Standard-Seite",
+                "key": "3",
+                "shortLabel": "dummy shortitle",
+                "description": "dummy description",
+                "options": [
+                    "rte"
+                ],
+                "labels": [
+                    "Kurztext"
+                ],
+                "columns": [
+                    "tx_mask_extendedabstract"
+                ]
+            }
+        },
+        "sql": {
+            "tx_mask_extendedabstract": {
+                "pages": {
+                    "tx_mask_extendedabstract": "text"
+                }
+            }
+        },
+        "tca": {
+            "tx_mask_extendedabstract": {
+                "config": {
+                    "type": "text",
+                    "eval": "",
+                    "richtextConfiguration": "default",
+                    "enableRichtext": "1",
+                    "cols": "",
+                    "rows": "",
+                    "default": "",
+                    "placeholder": "",
+                    "max": ""
+                },
+                "exclude": "1",
+                "key": "extendedabstract"
+            }
+        }
+    },
     "sys_file_reference": {
         "sql": {
             "tx_mask_agencylogo": {

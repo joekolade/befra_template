@@ -88,7 +88,7 @@ page.10.variables {
 
     kontaktlinks = COA
     kontaktlinks {
-
+        
         20 = TEXT
         20.typolink.parameter = tel:00497561912482
         20.value = +49 (0) 7561 91248-2

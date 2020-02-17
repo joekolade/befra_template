@@ -1,3 +1,4 @@
 .gitignore
 Resources/Development/bower_components/select2/
 Resources/Development/node_modules/
+/.idea
