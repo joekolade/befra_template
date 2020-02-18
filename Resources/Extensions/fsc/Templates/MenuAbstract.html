@@ -1,0 +1,29 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:layout name="Default"/>
+
+<f:section name="Main">
+
+  <f:if condition="{menu}">
+    <div class="specialnav">
+      <f:for each="{menu}" as="page">
+        <f:if condition="!{page.data.tx_mask_notvisibleinabstractmenu}">
+        <div class="specialnav__item{f:if(condition: page.active, then: ' active')}">
+          <a href="{page.link}" class="thumbnail">
+            <f:if condition="{page.data.tx_mask_extendedabstract}">
+              <f:then>
+                {page.data.tx_mask_extendedabstract -> f:format.html()}
+              </f:then>
+              <f:else>
+                <h4>{page.title}</h4>
+              </f:else>
+            </f:if>
+          </a>
+        </div>
+        </f:if>
+      </f:for>
+    </div>
+  </f:if>
+
+</f:section>
+</html>

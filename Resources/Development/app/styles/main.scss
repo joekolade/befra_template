@@ -10,10 +10,10 @@ $icon-font-path: '../fonts/';
 
 $fa-font-path: "../fonts";
 
-@import "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-@import "../node_modules/slick-carousel/slick/slick.scss";
-@import "../node_modules/font-awesome/scss/font-awesome.scss";
-@import "../node_modules/select2/src/scss/core.scss";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/font-awesome/scss/font-awesome";
+@import "../../node_modules/select2/src/scss/core";
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -97,6 +97,7 @@ body {
 @import "elements/special_box_mask";
 @import "elements/selectormadness";
 @import "elements/bullets";
+@import "elements/specialnav";
 
 
 
